@@ -8,7 +8,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import androidx.appcompat.widget.Toolbar;
+
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -20,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private TabLayout tabLayout;
+    private Button button3;
 
     private HomeFragment homeFragment;
-    private ListFragment listFragment;
+    private ListFragment helpFragment;
     private AddFragment addFragment;
     private SettingsFragment settingsFragment;
 
@@ -32,27 +40,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        button3 = findViewById(R.id.button3);
         viewPager = findViewById(R.id.view_pager);
         tabLayout = findViewById(R.id.tab_layout);
 
         homeFragment = new HomeFragment();
-        listFragment = new ListFragment();
         addFragment = new AddFragment();
+        helpFragment = new ListFragment();
         settingsFragment = new SettingsFragment();
 
         tabLayout.setupWithViewPager(viewPager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(homeFragment, "Home");
-        viewPagerAdapter.addFragment(listFragment, "List");
         viewPagerAdapter.addFragment(addFragment, "Add");
+        viewPagerAdapter.addFragment(helpFragment, "Help");
         viewPagerAdapter.addFragment(settingsFragment, "Settings");
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_home_24);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_list_alt_24);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_add_24);
+
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_add_24);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_help_outline_24);
         tabLayout.getTabAt(3).setIcon(R.drawable.ic_baseline_settings_24);
 
 
@@ -99,5 +108,15 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return fragmentTitle.get(position);
         }
+    }
+
+    public void test(View view) {
+        //setContentView(R.layout.current_program);
+
+
+        Intent intent = new Intent(this, CurrentProgram.class);
+        startActivity(intent);
+
+
     }
 }
