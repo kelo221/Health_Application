@@ -1,14 +1,12 @@
 package com.terveyssovellus.softa;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class ProfileCreationForm extends AppCompatActivity {
@@ -80,5 +78,9 @@ public class ProfileCreationForm extends AppCompatActivity {
                 || age > 150
                 || !ageString.equals(String.valueOf(age))
                 || ageString.equals("");
+    }
+
+    public void skip(View caller){
+        finish();
     }
 }
