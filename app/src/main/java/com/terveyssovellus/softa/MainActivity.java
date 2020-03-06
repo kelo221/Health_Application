@@ -11,7 +11,9 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.widget.Toolbar;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,7 +25,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    private SharedPreferences prefs;
+    public static Profile profile;
 
     private ViewPager viewPager;
     private TabLayout tabLayout;
@@ -76,6 +79,21 @@ public class MainActivity extends AppCompatActivity {
 
          */
 
+        prefs = getSharedPreferences("healthApp", Context.MODE_PRIVATE);
+        openProfile();
+    }
+
+    private void openProfile(){
+        String profileJSON = prefs.getString("savedProfile","");
+        if(profileJSON.equals("")){
+            profileCreationForm();
+        }
+
+    }
+
+    private void profileCreationForm(){
+        Intent intent = new Intent(this, ProfileCreationForm.class);
+        startActivity(intent);
     }
 
     private class ViewPagerAdapter extends FragmentPagerAdapter {
