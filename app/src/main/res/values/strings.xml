@@ -6,9 +6,9 @@
 
     <string name="profile_create_button">Aloita</string>
     <string name="name_error">Nimeä ei voi jättää tyhjäksi</string>
-    <string name="age_error">Ikä väärin...</string>
+    <string name="age_error">Tarkista ikä</string>
     <string name="position_error">Valitse oletko potilas vai lääkäri</string>
-    <string name="default_error">errorrorr</string>
+    <string name="default_error">Error</string>
     <string name="position_patient">Potilas</string>
     <string name="position_doctor">Lääkäri</string>
     <string name="profile_form_name_default">Syötä nimesi</string>

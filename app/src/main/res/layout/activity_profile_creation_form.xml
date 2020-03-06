@@ -78,44 +78,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_form_position" />
 
-    <TextView
-        android:id="@+id/name_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name_error"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_create_button" />
-
-    <TextView
-        android:id="@+id/age_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/age_error"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_create_button" />
-
-    <TextView
-        android:id="@+id/position_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/position_error"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_create_button" />
-
-    <TextView
-        android:id="@+id/default_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/default_error"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_create_button" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
