@@ -1,8 +1,10 @@
-package com.terveyssovellus.softa;
+package com.terveyssovellus.softa.fragments.content;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.terveyssovellus.softa.R;
 
 public class LanguageSelection extends AppCompatActivity {
 
