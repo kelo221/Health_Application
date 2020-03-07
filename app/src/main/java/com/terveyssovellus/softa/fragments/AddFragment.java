@@ -1,10 +1,12 @@
-package com.terveyssovellus.softa;
+package com.terveyssovellus.softa.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
+
+import com.terveyssovellus.softa.R;
 
 public class AddFragment extends Fragment {
 

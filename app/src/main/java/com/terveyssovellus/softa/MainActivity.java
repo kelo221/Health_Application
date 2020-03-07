@@ -8,18 +8,23 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import androidx.appcompat.widget.Toolbar;
-
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ListView;
 
 import com.google.android.material.tabs.TabLayout;
+import com.terveyssovellus.softa.fragments.AddFragment;
+import com.terveyssovellus.softa.fragments.HomeFragment;
+import com.terveyssovellus.softa.fragments.ListFragment;
+import com.terveyssovellus.softa.fragments.SettingsFragment;
+import com.terveyssovellus.softa.ui.Profile;
+import com.terveyssovellus.softa.ui.ProfileCreationForm;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,15 +37,26 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private Button button3;
 
+
     private HomeFragment homeFragment;
     private ListFragment helpFragment;
     private AddFragment addFragment;
     private SettingsFragment settingsFragment;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+
+
+
+
+
 
 
         button3 = findViewById(R.id.button3);

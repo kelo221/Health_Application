@@ -1,4 +1,4 @@
-package com.terveyssovellus.softa;
+package com.terveyssovellus.softa.plan;
 
 public class Symptom {
     private String name;

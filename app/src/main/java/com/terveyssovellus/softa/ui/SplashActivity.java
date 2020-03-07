@@ -1,11 +1,13 @@
-package com.terveyssovellus.softa;
+package com.terveyssovellus.softa.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
 import android.view.WindowManager;
+
+import com.terveyssovellus.softa.MainActivity;
+import com.terveyssovellus.softa.R;
 
 public class SplashActivity extends Activity {
     /* timer (in millisecond, 1000 = 1s)

@@ -1,4 +1,4 @@
-package com.terveyssovellus.softa;
+package com.terveyssovellus.softa.ui;
 
 import java.util.Calendar;
 import java.util.Date;

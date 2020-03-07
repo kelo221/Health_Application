@@ -1,4 +1,4 @@
-package com.terveyssovellus.softa;
+package com.terveyssovellus.softa.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import com.google.android.material.snackbar.Snackbar;
+import com.terveyssovellus.softa.MainActivity;
+import com.terveyssovellus.softa.R;
 
 public class ProfileCreationForm extends AppCompatActivity {
     private EditText   nameView, ageView;
