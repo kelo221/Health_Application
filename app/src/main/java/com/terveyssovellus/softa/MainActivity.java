@@ -25,9 +25,11 @@ import com.terveyssovellus.softa.fragments.ListFragment;
 import com.terveyssovellus.softa.fragments.SettingsFragment;
 import com.terveyssovellus.softa.ui.Profile;
 import com.terveyssovellus.softa.ui.ProfileCreationForm;
+import com.yariksoffice.lingver.Lingver;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private SharedPreferences prefs;
@@ -71,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
-        viewPagerAdapter.addFragment(homeFragment, "Home");
-        viewPagerAdapter.addFragment(addFragment, "Add");
-        viewPagerAdapter.addFragment(helpFragment, "Help");
-        viewPagerAdapter.addFragment(settingsFragment, "Settings");
+        viewPagerAdapter.addFragment(homeFragment, getString(R.string.fragment_name_home));
+        viewPagerAdapter.addFragment(addFragment, getString(R.string.fragment_name_add));
+        viewPagerAdapter.addFragment(helpFragment, getString(R.string.fragment_name_help));
+        viewPagerAdapter.addFragment(settingsFragment, getString(R.string.fragment_name_settings));
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_home_24);

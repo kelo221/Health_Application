@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Haoma</string>
+    <string name="profile_create_button">Aloita</string>
+    <string name="name_error">Nimeä ei voi jättää tyhjäksi</string>
+    <string name="age_error">Tarkista ikä</string>
+    <string name="position_error">Valitse oletko potilas vai lääkäri</string>
+    <string name="position_patient">Potilas</string>
+    <string name="position_doctor">Lääkäri</string>
+    <string name="profile_form_name_default">Syötä nimesi</string>
+    <string name="profile_form_age_default">Syötä ikäsi</string>
+    <string name="profile_form_welcome">Tervetuloa käyttämään Haomaa!</string>
+    <string name="fragment_name_home">Koti</string>
+    <string name="fragment_name_add">Ohjeet</string>
+    <string name="fragment_name_help">Apu</string>
+    <string name="fragment_name_settings">Asetukset</string>
+    <string name="fragment_settings_content_reset">Paina nappi pohjaan nollataksesi sovelluksen</string>
+    <string name="fragment_settings_content_versio">Versio 0.1</string>
+    <string name="fragment_settings_language_eng">Englanti</string>
+    <string name="fragment_settings_language_fin">Suomi</string>
+    <string name="fragment_settings_language_swe">Ruotsi</string>
+</resources>
