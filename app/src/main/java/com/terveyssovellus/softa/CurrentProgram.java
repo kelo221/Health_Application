@@ -9,6 +9,6 @@ public class CurrentProgram extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_current_program);
+        setContentView(R.layout.activity_nasal_polyops);
     }
 }
