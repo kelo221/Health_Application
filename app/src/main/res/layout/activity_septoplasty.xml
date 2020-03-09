@@ -15,7 +15,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="416dp"
-            android:text="@string/plan_content_nasal" />
+            android:text="@string/plan_content_septoplasty" />
 
 
     </LinearLayout>

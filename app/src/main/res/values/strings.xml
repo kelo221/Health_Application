@@ -8,8 +8,8 @@
         consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
         quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
         qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
-<string name="plan_name">Nenäpolyyppien poisto </string>
-<string name="plan_content">Kielletty \n
+<string name="plan_name_nasal">Nenäpolyyppien poisto </string>
+<string name="plan_content_nasal">Kielletty \n
 - Autolla ajo: 24h\n
 - Nenän sisään koskeminen\n
 Vältettävä:\n
@@ -18,11 +18,14 @@ Vältettävä:\n
 - Rasitus : 1 viikkoa\n
 - Saunominen : 1 viikko\n
 - Voimallinen niistäminen : 1 viikko\n
-Oireet:\n
-Normaalit :\n
+    \n
+Oireet\n
+
+    Normaalit :\n
 - Tukkoisuus (hoito: supistavat nenätipat)\n
-- Eritteiden kuivuminen nenään (hoito: huuhtelu kostuttaminen)\n
-Hälyttävät oireet:\n
+- Eritteiden kuivuminen nenään\n(hoito: huuhtelu kostuttaminen)\n
+
+Hälyttävät oireet\n
 - Voimakas verenvuoto *\n
 - Kuume yli 38 C° *\n
 - Voimakas kipu *\n
@@ -30,9 +33,39 @@ Hälyttävät oireet:\n
 - Ulospäin näkyvä nenän alueen turvotus * *\n
 ->   -> YHTEYS hoitaneeseen yksikköön !\n
 Hoito  \n
-- Kannuhoito (aloitetaan seuraavana päivänä operaatiosta)\n
+- Kannuhoito (seuraavana päivänä operaatiosta)\n
 - useita kertoja vuorokaudessa- 1-2 viikkoa\n
     </string>
+
+    <string name="plan_name_septplasty">Nenäpolyyppien poisto </string>
+<string name="plan_content_septoplasty">Kielletty \n
+- Autolla ajo: 24h\n
+- Nenän sisään koskeminen (!)\n
+Vältettävä:\n
+- Ponnistelu : 1 viikko\n
+- Rasitus : 1 viikkoa\n
+- Saunominen : 1 viikko\n
+- Voimallinen niistäminen : 1 viikko\n\n
+Oireet:\n
+Normaalit :\n
+- Alussa limakalvot ovat turvoksissa
+- Nenän limakalvolle kertyy kuivunutta eritettä ja verta
+(hoito: huuhtelu kostuttaminen)\n
+- Alussa voi tulla kirkasta verta voi tulla eritteen seassa, tummempaa hyytynyttä verta voi tulla viikon ajan.
+- Tukkoisuus helpottaa vähitellen 1-2 kk kuluessa.
+Hälyttävät oireet:\n
+- Voimakas verenvuoto yli 15 min, joka ei asetu nenää puristamalla/n
+- Kuume yli 38 C° *\n
+- Voimakas kipu *\n
+- Runsas märkäinen tai pahanhajuinen limaneritys *\n
+- Ulospäin näkyvä nenän alueen turvotus * *\n
+->   -> YHTEYS hoitaneeseen yksikköön !\n tai virka-ajan ulkopuolella Korva-, nenä- ja kurkkutautien klinkikan päivystyspoliklinikkaan
+Hoito\n - Kivun hoitoon tavallisia tulehduskipulääkkeitä/n
+    - Supistavia nenätippoja tai - suihkeita voi käyttää muutamana yönä tukkoisuutta helpottamaan. Jatkuva käyttö on kiellettyä, jottei tulisi lääkenuhaa.\n
+    - useita kertoja vuorokaudessa- 1-2 viikkoa\n
+    </string>
+
+
 
 <string name="licence" translatable="false">Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
