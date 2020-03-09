@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Haoma</string>
+    <string name="profile_create_button">Börja</string>
+    <string name="name_error">Namn är obligatorisk</string>
+    <string name="age_error">Kolla åldern</string>
+    <string name="position_error">Välj är du läkare eller patient</string>
+    <string name="position_patient">Patient</string>
+    <string name="position_doctor">Läkare</string>
+    <string name="profile_form_name_default">Skriv ditt namn</string>
+    <string name="profile_form_age_default">Skriv ditt ålder</string>
+    <string name="profile_form_welcome">Vällkommen att använda Haoma</string>
+    <string name="fragment_name_home">Hem</string>
+    <string name="fragment_name_add">Instruktioner</string>
+    <string name="fragment_name_help">Hjälp</string>
+    <string name="fragment_name_settings">Inställningar</string>
+    <string name="fragment_settings_content_reset">Tryck knappen till botten att  nolla</string>
+    <string name="fragment_settings_content_versio">Version 0.1</string>
+    <string name="fragment_settings_language_eng">Engelska</string>
+    <string name="fragment_settings_language_fin">Finska</string>
+    <string name="fragment_settings_language_swe">Svenska</string>
+</resources>
