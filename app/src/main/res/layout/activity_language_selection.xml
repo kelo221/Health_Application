@@ -7,87 +7,84 @@
     tools:context=".fragments.content.LanguageSelection">
 
     <ImageButton
-        android:id="@+id/lan_eng"
-        android:layout_width="300sp"
-        android:layout_height="150sp"
+        android:id="@+id/portrait_lang_header_fi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="TODO"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
-        android:tag="en"
+        android:cropToPadding="true"
         android:onClick="changeLanguage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999"
-        app:srcCompat="@drawable/ic_united_states_of_america_flag"
-
-        />
-
-    <ImageButton
-        android:id="@+id/lan_swe"
-        android:layout_width="300sp"
-        android:layout_height="150sp"
-        android:contentDescription="TODO"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
-        android:tag="sv"
-        android:onClick="changeLanguage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        app:srcCompat="@drawable/ic_sweden_flag"
-/>
-
-    <ImageButton
-        android:id="@+id/lan_fi"
-        android:layout_width="300sp"
-        android:layout_height="150sp"
-        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
         android:scaleX="0.5"
         android:scaleY="0.5"
         android:tag="fi"
-        android:onClick="changeLanguage"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/portrait_lang_header_sv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_finland_flag"
-        />
+        app:srcCompat="@drawable/ic_finland_flag" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <ImageButton
+        android:id="@+id/portrait_lang_header_sv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:cropToPadding="true"
+        android:onClick="changeLanguage"
+        android:scaleType="fitCenter"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:tag="sv"
+        app:layout_constraintBottom_toTopOf="@+id/portrait_lang_header_en"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portrait_lang_header_fi"
+        app:srcCompat="@drawable/ic_sweden_flag" />
+
+    <ImageButton
+        android:id="@+id/portrait_lang_header_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:cropToPadding="true"
+        android:onClick="changeLanguage"
+        android:scaleType="fitCenter"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:tag="en"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portrait_lang_header_sv"
+        app:srcCompat="@drawable/ic_united_states_of_america_flag" />
+
+    <TextView
+        android:id="@+id/landscape_lang_header_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="@string/fragment_settings_language_eng"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lan_eng"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/portrait_lang_header_en"
+        app:layout_constraintEnd_toEndOf="@+id/portrait_lang_header_en"
+        app:layout_constraintStart_toStartOf="@+id/portrait_lang_header_en" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/landscape_lang_header_fi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="@string/fragment_settings_language_fin"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/portrait_lang_header_fi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lan_fi"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/landscape_lang_header_en"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="@string/fragment_settings_language_swe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lan_swe"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/portrait_lang_header_sv"
+        app:layout_constraintEnd_toEndOf="@+id/portrait_lang_header_sv"
+        app:layout_constraintStart_toStartOf="@+id/portrait_lang_header_sv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
