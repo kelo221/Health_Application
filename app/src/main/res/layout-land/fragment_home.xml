@@ -9,7 +9,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp">
 
@@ -22,8 +22,9 @@
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/homecare_guide_list" />
+            app:layout_constraintStart_toEndOf="@+id/homecare_guide_list"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13999999" />
 
         <Button
             android:id="@+id/negative"
@@ -67,15 +68,15 @@
 
         <ListView
             android:id="@+id/homecare_guide_list"
-            android:layout_width="match_parent"
-            android:layout_height="131dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.15"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16000003" />
+            app:layout_constraintVertical_bias="0.13999999" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

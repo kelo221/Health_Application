@@ -9,6 +9,7 @@ public class Profile {
     private Date creationTime;
     //private Plan plan;
 
+
     public Profile(String name, int age, int position){
         this.name = name;
         this.age = age;
