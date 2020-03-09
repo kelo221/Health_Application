@@ -8,7 +8,31 @@
         consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
         quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
         qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
-
+<string name="plan_name">Nenäpolyyppien poisto </string>
+<string name="plan_content">Kielletty \n
+- Autolla ajo: 24h\n
+- Nenän sisään koskeminen\n
+Vältettävä:\n
+- Lentäminen : 1-2 viikkoa\n
+- Ponnistelu : 1 viikko\n
+- Rasitus : 1 viikkoa\n
+- Saunominen : 1 viikko\n
+- Voimallinen niistäminen : 1 viikko\n
+Oireet:\n
+Normaalit :\n
+- Tukkoisuus (hoito: supistavat nenätipat)\n
+- Eritteiden kuivuminen nenään (hoito: huuhtelu kostuttaminen)\n
+Hälyttävät oireet:\n
+- Voimakas verenvuoto *\n
+- Kuume yli 38 C° *\n
+- Voimakas kipu *\n
+- Runsas märkäinen tai pahanhajuinen limaneritys *\n
+- Ulospäin näkyvä nenän alueen turvotus * *\n
+->   -> YHTEYS hoitaneeseen yksikköön !\n
+Hoito  \n
+- Kannuhoito (aloitetaan seuraavana päivänä operaatiosta)\n
+- useita kertoja vuorokaudessa- 1-2 viikkoa\n
+    </string>
 
 <string name="licence" translatable="false">Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
