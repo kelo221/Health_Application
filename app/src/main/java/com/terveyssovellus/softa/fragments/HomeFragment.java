@@ -81,7 +81,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         }
         public void saveNeutral(){
             //userData.add(0, getDate());
-            Toast.makeText(getContext(), "DEBUG0" + getDate(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "DEBUG0 " + getDate(), Toast.LENGTH_SHORT).show();
         }
         public void saveNegative(){
             //userData.add(-1, getDate());
