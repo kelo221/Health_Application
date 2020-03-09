@@ -36,7 +36,6 @@
     <string name="fragment_name_help">Apu</string>
     <string name="fragment_name_settings">Asetukset</string>
 
-
     <string name="fragment_settings_content_reset">Paina nappi pohjaan nollataksesi sovelluksen</string>
     <string name="fragment_settings_content_versio">Versio 0.1</string>
 
