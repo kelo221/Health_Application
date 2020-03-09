@@ -34,6 +34,7 @@ public class SplashActivity extends Activity {
                 intent.putExtra("state", "launch");
                 startActivity(intent);
                 finish();
+                ///
             }
         }, SPLASH_TIME_OUT);
     }
