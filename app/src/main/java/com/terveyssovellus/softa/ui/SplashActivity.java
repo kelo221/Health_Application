@@ -2,6 +2,7 @@ package com.terveyssovellus.softa.ui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -20,8 +21,9 @@ public class SplashActivity extends Activity {
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.background_splash);
-
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+        {setContentView(R.layout.background_splash_portrait);}
+        else { setContentView(R.layout.background_splash_horizontal);}
 
         // If you want to make a timer disabled, delete handler brackets.
         new Handler().postDelayed(new Runnable() {
