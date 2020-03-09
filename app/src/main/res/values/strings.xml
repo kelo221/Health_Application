@@ -31,7 +31,7 @@ Hälyttävät oireet:\n
 ->   -> YHTEYS hoitaneeseen yksikköön !\n
 Hoito  \n
 - Kannuhoito (aloitetaan seuraavana päivänä operaatiosta)\n
-- useita kertoja vuorokaudessa- 1-2 viikkoa\n
+- useita kertoja vuorokaudessa- 1-2 viikkoa\n
     </string>
 
 <string name="licence" translatable="false">Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
