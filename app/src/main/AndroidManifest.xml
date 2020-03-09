@@ -11,14 +11,14 @@
         android:theme="@style/AppTheme">
         <activity android:name=".fragments.content.Licences"></activity>
         <activity android:name=".fragments.content.LanguageSelection" />
-        <activity android:name=".ui.SplashActivity">
+        <activity android:name=".profile.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ProfileCreationForm" />
+        <activity android:name=".profile.ProfileCreationForm" />
         <activity android:name=".CurrentProgram" />
         <activity android:name=".MainActivity" />
     </application>

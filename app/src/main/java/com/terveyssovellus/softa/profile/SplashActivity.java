@@ -1,4 +1,4 @@
-package com.terveyssovellus.softa.ui;
+package com.terveyssovellus.softa.profile;
 
 import android.app.Activity;
 import android.content.Intent;
