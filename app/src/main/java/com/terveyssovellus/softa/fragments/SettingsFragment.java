@@ -18,7 +18,6 @@ import com.terveyssovellus.softa.fragments.content.LanguageSelection;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.fragments.content.Licences;
 import com.terveyssovellus.softa.profile.Profile;
-import com.terveyssovellus.softa.profile.ProfileCreationForm;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -89,8 +88,7 @@ public class SettingsFragment extends Fragment {
 
     private void resetProfile(){
         Profile.getInstance().resetProfile();
-        Intent refresh = new Intent(getContext(), ProfileCreationForm.class);
-        refresh.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Intent refresh = new Intent(getContext(), MainActivity.class);
         ((Activity)getContext()).finish();
         ((Activity)getContext()).overridePendingTransition(0, 0);
         startActivity(refresh);

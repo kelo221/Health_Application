@@ -30,10 +30,9 @@ public class LanguageSelection extends AppCompatActivity {
         Configuration conf = res.getConfiguration();
         conf.locale = locale;
         res.updateConfiguration(conf, dm);
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        intent.putExtra(MainActivity.TARGET_FRAGMENT,3);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Intent refresh = new Intent(this, MainActivity.class);
+        refresh.putExtra(MainActivity.TARGET_FRAGMENT,3);
         finish();
-        startActivity(intent);
+        startActivity(refresh);
     }
 }

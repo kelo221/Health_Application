@@ -13,7 +13,6 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -44,13 +43,10 @@ public class MainActivity extends AppCompatActivity {
     private SettingsFragment settingsFragment;
 
     public static final String TARGET_FRAGMENT = "targetFragment";
-    public static final String NEW_LANGUAGE = "newLanguage";
 
     public static final String HAOMA_DATA = "haomaData";
     public static final String PROFILE_DATA = "profiledata";
     public static final String FIRST_USE = "firstUse";
-
-    private Boolean appHasStarted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,9 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onStart(){
         writePrefs();
-        //Profile profile = Profile.getInstance();
-        //setLanguage(profile.getLanguage());
-        viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
         super.onStart();
     }
 
