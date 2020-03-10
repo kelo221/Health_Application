@@ -30,6 +30,8 @@
     <string name="plan_name_septplasty">Septoplastia</string>
     <string name="plan_content_nasal">Forbidden\n - Operating a vehicle: 24h\n - Touching the nasal canal(!)\n
         Avoid:\\n -Flying: 1-2 weeks\\n -Physical activity: 1 week\n         -Going to sauna: 1 week\\n -Blowing nose with extreme force: 1 week \\n Symptoms:\\n         Normal :\\\\n Stuffed nasal canals ( use nasal spray or other liquids) \\n         -Alarming symptoms\\n -Strong bleeding\\n -Fever over 38 C °\\n -Strong pain\\n         Secretion of foul smelling mucus\\n Visible swelling of the nose :\\n         ->   -> IMMEDIATELY contact the treating medical personnel!\\n Treatment\\n         - Regular anti-inflammatory painkillers/n - Nasal drops or sprays can be used during the first nights but nor regularly - Use of nasal jug, multiple times a day: 1-2 weeks \\n</string>
-    <string name="plan_content_septoplasty">Septoplasty</string>
-    <string name="plan_name_nasal">Nasal polyops</string>
+    <string name="plan_content_septoplasty"><![CDATA[Forbidden\n – Operating a vehicle: 24h\n – Touching the nasal canal(!)\n         Avoid:\n –Flying: 1–2 weeks\n –Physical activity: 1 week\n         –Going to sauna: 1 week\n -Blowing nose with extreme force: 1 week \n Symptoms:\n         Normal :\\n Stuffed nasal canals ( use nasal spray or other liquids) \n         -Alarming symptoms\n -Strong bleeding\n -Fever over 38 C °\n -Strong pain\n         Secretion of foul smelling mucus\n Visible swelling of the nose :\n         ->   -> IMMEDIATELY contact the treating medical personnel!\n Treatment\n         - Regular anti-inflammatory painkillers/n - Nasal drops or sprays can be used during the first nights but nor regularly - Use of nasal jug, multiple times a day: 1-2 weeks \n]]></string>
+    <string name="plan_name_nasal">Nasal polyps</string>
+    <string name="listView_button">Scan a QR-Code</string>
+    <string name="listView_notification">No plan selected, if you cannot get the camera working write the numbers in the text box below and press the button.</string>
 </resources>

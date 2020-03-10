@@ -59,4 +59,6 @@
         <item>Licens</item>
 
     </string-array>
+    <string name="listView_button">Scan a QR-Code</string>
+    <string name="listView_notification">No plan selected.</string>
 </resources>

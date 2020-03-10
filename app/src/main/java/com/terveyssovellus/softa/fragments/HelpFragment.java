@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 
 import com.terveyssovellus.softa.R;
 
-public class ListFragment extends Fragment {
+public class HelpFragment extends Fragment {
 
-    public ListFragment(){}
+    public HelpFragment(){}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,9 @@ public class ListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
-        //return inflater.inflate(R.layout.fragment_list, container, false);
-        return inflater.inflate(R.layout.activity_nasal_polyops, container, false);
+        return inflater.inflate(R.layout.fragment_help, container, false);
+
+
+
     }
 }

@@ -14,13 +14,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
 import com.terveyssovellus.softa.fragments.AddFragment;
 import com.terveyssovellus.softa.fragments.HomeFragment;
-import com.terveyssovellus.softa.fragments.ListFragment;
+import com.terveyssovellus.softa.fragments.HelpFragment;
 import com.terveyssovellus.softa.fragments.SettingsFragment;
 import com.terveyssovellus.softa.profile.Profile;
 import com.terveyssovellus.softa.profile.ProfileCreationForm;
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private HomeFragment homeFragment;
-    private ListFragment helpFragment;
+    private HelpFragment helpFragment;
     private AddFragment addFragment;
     private SettingsFragment settingsFragment;
 
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         homeFragment = new HomeFragment();
         addFragment = new AddFragment();
-        helpFragment = new ListFragment();
+        helpFragment = new HelpFragment();
         settingsFragment = new SettingsFragment();
 
         tabLayout.setupWithViewPager(viewPager);
