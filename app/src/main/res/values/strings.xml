@@ -52,6 +52,8 @@
         <item>Nollaa sovellus</item>
         <item>Lisätiedot</item>
         <item>Lisenssi</item>
+
+    </string-array>
     <string name="plan_content_septoplasty">Septoplasty</string>
     <string name="plan_name_septplasty">Septoplastia</string>
 
