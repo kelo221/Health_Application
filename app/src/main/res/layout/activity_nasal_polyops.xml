@@ -17,6 +17,14 @@
             android:layout_height="416dp"
             android:text="@string/plan_content_nasal" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="319dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            app:srcCompat="@drawable/nenakannu" />
+
 
     </LinearLayout>
 </ScrollView>
