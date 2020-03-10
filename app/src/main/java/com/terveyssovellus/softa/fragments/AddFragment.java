@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -11,11 +12,12 @@ import androidx.fragment.app.Fragment;
 
 import com.terveyssovellus.softa.R;
 
-public class AddFragment extends Fragment {
+public class AddFragment extends Fragment{
 
 
     String programNumber;
-    EditText usernameEditText;
+    Button qrAcceptButton;
+
 
     public AddFragment(){}
 
@@ -29,11 +31,17 @@ public class AddFragment extends Fragment {
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_add, container, false);
 
-        int qrCodeResult = 0;
+        final int qrCodeResult = 0;
 
-        usernameEditText = (EditText) view.findViewById(R.id.numberInput);
+        qrAcceptButton = (Button) view.findViewById(R.id.listView_button);
 
 
+        qrAcceptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qrButtonPressed();
+            }
+        });
 
 
 
@@ -49,14 +57,16 @@ public class AddFragment extends Fragment {
 
 
 
-
     }
 
 
-    public void qrButtonPressed(View view) {
-        programNumber = usernameEditText.getText().toString();
+    public void qrButtonPressed() {
+        programNumber = qrAcceptButton.getText().toString();
         if (programNumber.matches("")) {
             Toast.makeText(getContext(), "You did not enter a username", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT).show();
+
         }
     }
 }

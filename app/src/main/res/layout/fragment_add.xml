@@ -23,7 +23,6 @@
 
         <Button
             android:id="@+id/listView_button"
-            android:onClick="qrButtonPressed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/listView_button"
