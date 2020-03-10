@@ -49,7 +49,8 @@ public class ProfileCreationForm extends AppCompatActivity {
     public void saveProfile(View caller){
         hideKeyboard();
         if(noInputErrors(caller)){
-            MainActivity.profile = new Profile(name,age,position);
+            Profile profile = Profile.getInstance();
+            profile.setProfile(name,age,position,true);
             finish();
         }
     }
@@ -83,6 +84,7 @@ public class ProfileCreationForm extends AppCompatActivity {
     }
 
     public void skip(View caller){
+        Profile.getInstance().setProfile("",0,-1,true);
         finish();
     }
 }
