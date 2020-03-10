@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
+
     <string name="plan_name_septplasty">Septoplastia</string>
     <string name="plan_content_septoplasty">Kielletty \n
         - Autolla ajo: 24h\n- Nenän sisään koskeminen (!)\n Vältettävä:\n
