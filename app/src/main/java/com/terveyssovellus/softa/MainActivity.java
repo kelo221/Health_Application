@@ -10,10 +10,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +25,6 @@ import com.terveyssovellus.softa.profile.Profile;
 import com.terveyssovellus.softa.profile.ProfileCreationForm;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private SharedPreferences prefs;
@@ -37,25 +33,21 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private Button button3;
 
+
     private HomeFragment homeFragment;
     private HelpFragment helpFragment;
     private AddFragment addFragment;
     private SettingsFragment settingsFragment;
 
     public static final String TARGET_FRAGMENT = "targetFragment";
-
     public static final String HAOMA_DATA = "haomaData";
     public static final String PROFILE_DATA = "profiledata";
-    public static final String FIRST_USE = "firstUse";
+    public static final String PROFILE_CREATED = "profileCreated";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        prefs = getSharedPreferences(HAOMA_DATA, Context.MODE_PRIVATE);
-        writePrefs();
-        loadProfile();
 
         button3 = findViewById(R.id.positive);
         viewPager = findViewById(R.id.view_pager);
@@ -87,14 +79,19 @@ public class MainActivity extends AppCompatActivity {
         badgeDrawable.setVisible(true);
         badgeDrawable.setNumber(0);
          */
+
+        prefs = getSharedPreferences(HAOMA_DATA, Context.MODE_PRIVATE);
+        openProfile();
     }
 
     protected void onStart(){
-        writePrefs();
+        //viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
+        //openProfile();
         super.onStart();
     }
 
     protected void onRestart(){
+        //openProfile();
         super.onRestart();
     }
 
@@ -103,44 +100,35 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    public void setLanguage(String language){
-        Locale locale = new Locale(language);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = locale;
-        res.updateConfiguration(conf,dm);
-        setContentView(R.layout.activity_main);
+    private void writePrefs(){
+        Gson gson = new Gson();
+        Profile profile = Profile.getInstance();
+        String profileJSON = gson.toJson(profile);
+        SharedPreferences.Editor prefEditor = prefs.edit();
+        prefEditor.putString(PROFILE_DATA,profileJSON);
+        prefEditor.putBoolean(PROFILE_CREATED,profile.hasBeenCreated());
+        prefEditor.commit();
     }
 
-    private void writePrefs(){
-        Profile profile = Profile.getInstance();
-        if(profile.hasBeenCreated() != null){
-            Gson gson = new Gson();
-            String profileJSON = gson.toJson(profile);
-            SharedPreferences.Editor prefEditor = prefs.edit();
-            prefEditor.putString(PROFILE_DATA,profileJSON);
-            prefEditor.putBoolean(FIRST_USE,!profile.hasBeenCreated());
-            prefEditor.commit();
+    private void openProfile(){
+        Gson gson = new Gson();
+        readProfile();
+        if(!Profile.getInstance().hasBeenCreated()){
+            profileCreationForm();
+            Log.wtf("loggin",gson.toJson(Profile.getInstance()));
         }
     }
 
-    private void loadProfile(){
+    public void readProfile(){
         Gson gson = new Gson();
-        if(prefs.contains(PROFILE_DATA)){
-            String profileJSON = prefs.getString(PROFILE_DATA,"");
-            Profile tempProfile = gson.fromJson(profileJSON,Profile.class);
-            if(tempProfile.hasBeenCreated()){
-                Profile.getInstance().setProfile(tempProfile);
-            } else {
-                profileCreationForm();
-            }
+        Profile profile = Profile.getInstance();
+        String profileJSON = prefs.getString(PROFILE_DATA,"");
+        if(prefs.getBoolean(PROFILE_CREATED,false)){
+            profile.setProfile(gson.fromJson(profileJSON,Profile.class));
         } else {
             profileCreationForm();
+            profile.setHasBeenCreated();
         }
-        //appHasStarted = true;
-        Profile profile = Profile.getInstance();
-        setLanguage(profile.getLanguage());
     }
 
     private void profileCreationForm(){
@@ -185,10 +173,5 @@ public class MainActivity extends AppCompatActivity {
 
         //Intent intent = new Intent(this, CurrentProgram.class);
         //startActivity(intent);
-    }
-
-    public void testQR(View caller){
-        Intent intent = new Intent(this, QR_reader.class);
-        startActivity(intent);
     }
 }

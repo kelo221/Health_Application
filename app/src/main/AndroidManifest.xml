@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.terveyssovellus.softa">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QrReader"></activity>
-        <activity android:name=".QR_reader" />
-        <activity android:name=".fragments.content.Licences" />
+        <activity android:name=".fragments.content.Licences"></activity>
         <activity android:name=".fragments.content.LanguageSelection" />
         <activity android:name=".profile.SplashActivity">
             <intent-filter>
@@ -25,10 +21,6 @@
         <activity android:name=".profile.ProfileCreationForm" />
         <activity android:name=".CurrentProgram" />
         <activity android:name=".MainActivity" />
-
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="barcode" />
     </application>
 
 </manifest>
