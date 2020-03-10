@@ -10,7 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.google.gson.Gson;
 import com.terveyssovellus.softa.R;
+import com.terveyssovellus.softa.profile.Profile;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -20,6 +22,7 @@ import java.util.Date;
 
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
+    TextView patientName;
 
     public HomeFragment(){}
 
@@ -36,7 +39,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        TextView patientName = (TextView) view.findViewById(R.id.patient_name);
+        patientName = (TextView) view.findViewById(R.id.patient_name);
         Button positive = (Button) view.findViewById(R.id.positive);
         Button neutral = (Button) view.findViewById(R.id.neutral);
         Button negative = (Button) view.findViewById(R.id.negative);
@@ -47,9 +50,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
        negative.setOnClickListener(this);
        neutral.setOnClickListener(this);
 
-        //patientName.setText(Profile.getName());
         return view;
 
+    }
+
+    public void printName(View caller){
+        Gson gson = new Gson();
+        patientName.setText(gson.toJson(Profile.getInstance()));
     }
 
     @Override
@@ -76,8 +83,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         }
 
         public void savePositive(){
+            Gson gson = new Gson();
            // userData.add(1, getDate());
-            Toast.makeText(getContext(), "DEBUG1 "+ getDate(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), gson.toJson(Profile.getInstance()), Toast.LENGTH_SHORT).show();
         }
         public void saveNeutral(){
             //userData.add(0, getDate());
