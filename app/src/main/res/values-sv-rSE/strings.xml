@@ -45,4 +45,14 @@
 
 
     <string name="plan_name_nasal">Näspolypernas amortering</string>
+
+
+
+    <string-array name="fragment_settings_content">
+        <item>Språk</item>
+        <item>Återslälla appen</item>
+        <item>Information</item>
+        <item>Licens</item>
+
+    </string-array>
 </resources>
