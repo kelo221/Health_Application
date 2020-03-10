@@ -44,6 +44,5 @@
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
-    <string name="plan_name_nasal">"Nenäpolyyppien poisto "</string>
     <string name="plan_content_nasal">Kielletty \\n - Autolla ajo: 24h\\n - Nenän sisään koskeminen\\n Vältettävä:\\n - Lentäminen : 1-2 viikkoa\\n - Ponnistelu : 1 viikko\\n - Rasitus : 1 viikkoa\\n - Saunominen : 1 viikko\\n - Voimallinen niistäminen : 1 viikko\\n     \\n Oireet\\n      Normaalit :\\n - Tukkoisuus (hoito: supistavat nenätipat)\\n - Eritteiden kuivuminen nenään\\n(hoito: huuhtelu kostuttaminen)\\n  Hälyttävät oireet\\n - Voimakas verenvuoto *\\n - Kuume yli 38 C° *\\n - Voimakas kipu *\\n - Runsas märkäinen tai pahanhajuinen limaneritys *\\n - Ulospäin näkyvä nenän alueen turvotus * *\\n ->   -> YHTEYS hoitaneeseen yksikköön !\\n Hoito  \\n - Kannuhoito (seuraavana päivänä operaatiosta)\\n - useita kertoja vuorokaudessa- 1-2 viikkoa\\n</string>
 </resources>
