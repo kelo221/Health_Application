@@ -19,6 +19,8 @@ import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.fragments.content.Licences;
 import com.terveyssovellus.softa.profile.Profile;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class SettingsFragment extends Fragment {
     public SettingsFragment() {
     }
@@ -71,6 +73,10 @@ public class SettingsFragment extends Fragment {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 1){
+                    SharedPreferences.Editor prefEditor = getActivity()
+                            .getSharedPreferences(MainActivity.HAOMA_DATA, MODE_PRIVATE).edit();
+                    prefEditor.remove(MainActivity.PROFILE_DATA);
+                    prefEditor.commit();
                     resetProfile();
                 }
                 return true;

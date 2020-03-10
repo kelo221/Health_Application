@@ -50,7 +50,7 @@ public class ProfileCreationForm extends AppCompatActivity {
         hideKeyboard();
         if(noInputErrors(caller)){
             Profile profile = Profile.getInstance();
-            profile.setProfile(name,age,position,true);
+            profile.setProfile(name,age,position,true,"fi");
             finish();
         }
     }
@@ -84,7 +84,7 @@ public class ProfileCreationForm extends AppCompatActivity {
     }
 
     public void skip(View caller){
-        Profile.getInstance().setProfile("",0,-1,true);
+        Profile.getInstance().setProfile("",0,-1,true,"fi");
         finish();
     }
 }

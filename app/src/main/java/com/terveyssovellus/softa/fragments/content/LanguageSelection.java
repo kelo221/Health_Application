@@ -9,6 +9,8 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import com.terveyssovellus.softa.MainActivity;
 import com.terveyssovellus.softa.R;
+import com.terveyssovellus.softa.profile.Profile;
+
 import java.util.Locale;
 
 public class LanguageSelection extends AppCompatActivity {
@@ -21,6 +23,7 @@ public class LanguageSelection extends AppCompatActivity {
 
     public void changeLanguage(View caller){
         String lang = (String)caller.getTag();
+        Profile.getInstance().setLanguage(lang);
         Locale locale = new Locale(lang);
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
