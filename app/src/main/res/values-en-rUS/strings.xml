@@ -27,8 +27,8 @@
         <item>About</item>
         <item>Licence</item>
     </string-array>
-    <string name="plan_name_septplasty">PLACEHOLDER</string>
-    <string name="plan_content_nasal">PLACEHOLDER</string>
-    <string name="plan_content_septoplasty">PLACEHOLDER</string>
-    <string name="plan_name_nasal">PLACEHOLDER</string>
+    <string name="plan_name_septplasty">Septoplastia</string>
+    <string name="plan_content_nasal">Nasal</string>
+    <string name="plan_content_septoplasty">Septoplasty</string>
+    <string name="plan_name_nasal">Nasal polyops</string>
 </resources>

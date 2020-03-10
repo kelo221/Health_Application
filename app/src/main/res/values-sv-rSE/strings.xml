@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plan_name_septplasty">Näspolyp operation </string>
-    <string name="plan_content_septoplasty">Förbjuden \n
-- Köra bil: 24h\n
-- Rör ej näsan innifrån (!)\n
-Undvika:\n
-- Ansträngning: 1 vecka\n
-- Påfrestning : 1 vecka\n
-- Bastu : 1 vecka\n
-- Stark snytning : 1 vecka\n\n
-Symtom:\n
-Normal :\n
-- I början slemhinnarna är dästa
-- Torr blod och sekret på näsans slemhinnarna\n
-- I början kan komma klar blod mellan sekret, mörkare koagulerad blod kan komma ca en vecka.\n
-- Det är lättare att andas pä nesan i 1-2 månader.\n
-Alarn symptom:\n
-- Kraftig näsblödning över 15 minuter/n
-- Feber över 38 C° *\n
-- Kraftig värk *\n
-- Riklig varig eller dålig slemning *\n
-- Distinkt näsområdets svällining * *\n
--> -> KONTAKT genast hälsovårdcentral !\n eller utanför abetstid sjukhusets tjänstgörsskift
-Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner./n
- - Näsdroppar eller nässpray kan användas under de första dagarna att lugna respiration.\n
-   </string>
+    <string name="plan_name_septplasty">Näsplypernas amortering</string>
+    <string name="plan_content_septoplasty">Septoplastia</string>
 
     <string name="app_name">Haoma</string>
     <string name="profile_create_button">Börja</string>
@@ -45,8 +22,8 @@ Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner./n
     <string name="fragment_settings_language_eng">Engelska</string>
     <string name="fragment_settings_language_fin">Finska</string>
     <string name="fragment_settings_language_swe">Svenska</string>
-    <string name="plan_name_septplasty">PLACEHOLDER</string>
-    <string name="plan_content_nasal">PLACEHOLDER</string>
-    <string name="plan_content_septoplasty">PLACEHOLDER</string>
-    <string name="plan_name_nasal">PLACEHOLDER</string>
+    <string name="plan_name_septplasty">N</string>
+    <string name="plan_content_nasal">Nasal</string>
+    <string name="plan_content_septoplasty">S</string>
+    <string name="plan_name_nasal">Näspolypernas amortering</string>
 </resources>

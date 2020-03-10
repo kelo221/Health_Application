@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plan_name_septplasty">Nenäpolyyppien poisto </string>
+    <string name="plan_name_septplasty">Septoplastia</string>
     <string name="plan_content_septoplasty">Kielletty \n
 - Autolla ajo: 24h\n
 - Nenän sisään koskeminen (!)\n
@@ -46,6 +46,6 @@ Hoito\n - Kivun hoitoon tavallisia tulehduskipulääkkeitä/n
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
-    <string name="plan_name_nasal">PLACEHOLDER</string>
-    <string name="plan_content_nasal">PLACEHOLDER</string>
+    <string name="plan_name_nasal">"Nenäpolyyppien poisto "</string>
+    <string name="plan_content_nasal">Nasaali</string>
 </resources>
