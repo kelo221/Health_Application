@@ -31,7 +31,7 @@
     <string name="profile_form_name_default">Syötä nimesi</string>
     <string name="profile_form_age_default">Syötä ikäsi</string>
     <string name="profile_form_welcome">Tervetuloa käyttämään Haomaa!</string>
-    <string name="profile_form_skip">skip</string>
+    <string name="profile_form_skip" translatable="false">Nasal</string>
 
     <!-- Language of Fragments -->
     <string name="fragment_name_home">Koti</string>
@@ -52,14 +52,6 @@
         <item>Nollaa sovellus</item>
         <item>Lisätiedot</item>
         <item>Lisenssi</item>
-    </string-array>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
     <string name="plan_content_septoplasty">Septoplasty</string>
 
 
