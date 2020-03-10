@@ -18,6 +18,9 @@ import com.terveyssovellus.softa.fragments.content.LanguageSelection;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.fragments.content.Licences;
 import com.terveyssovellus.softa.profile.Profile;
+import com.terveyssovellus.softa.profile.ProfileCreationForm;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class SettingsFragment extends Fragment {
     public SettingsFragment() {
@@ -43,34 +46,38 @@ public class SettingsFragment extends Fragment {
         lvdata.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               //Toast.makeText(getContext(), items[position], Toast.LENGTH_SHORT).show();
-               switch(position) {
-                   case 0:
-                       Intent intent = new Intent(getContext(), LanguageSelection.class);
-                       startActivity(intent);
-                       break;
-                   case 1:
-                       Toast.makeText(getContext(), R.string.fragment_settings_content_reset, Toast.LENGTH_SHORT).show();
-                       break;
-                   case 2:
-                       Toast.makeText(getContext(), R.string.fragment_settings_content_versio, Toast.LENGTH_SHORT).show();
-                       break;
-                   case 3:
-                       Intent intent2 = new Intent(getContext(), Licences.class);
-                       startActivity(intent2);
-                       break;
-                   default:
+                //Toast.makeText(getContext(), items[position], Toast.LENGTH_SHORT).show();
+                switch(position) {
+                    case 0:
+                        Intent intent = new Intent(getContext(), LanguageSelection.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        Toast.makeText(getContext(), R.string.fragment_settings_content_reset, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(getContext(), R.string.fragment_settings_content_versio, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        Intent intent2 = new Intent(getContext(), Licences.class);
+                        startActivity(intent2);
+                        break;
+                    default:
 
-                       break;
-               }
+                        break;
+                }
 
-           }
+            }
         });
 
         lvdata.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 1){
+                    SharedPreferences.Editor prefEditor = getActivity()
+                            .getSharedPreferences(MainActivity.HAOMA_DATA, MODE_PRIVATE).edit();
+                    prefEditor.remove(MainActivity.PROFILE_DATA);
+                    prefEditor.commit();
                     resetProfile();
                 }
                 return true;
@@ -82,9 +89,9 @@ public class SettingsFragment extends Fragment {
 
     private void resetProfile(){
         Profile.getInstance().resetProfile();
-        Intent refresh = new Intent(getContext(), MainActivity.class);
+        Intent intent = new Intent(getContext(), ProfileCreationForm.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         ((Activity)getContext()).finish();
-        ((Activity)getContext()).overridePendingTransition(0, 0);
-        startActivity(refresh);
+        startActivity(intent);
     }
 }

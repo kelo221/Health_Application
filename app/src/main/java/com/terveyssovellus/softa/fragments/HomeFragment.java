@@ -8,18 +8,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
 import com.google.gson.Gson;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.profile.Profile;
-
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-
 import java.util.Date;
-
-
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     TextView patientName;
@@ -38,20 +31,26 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         patientName = (TextView) view.findViewById(R.id.patient_name);
         Button positive = (Button) view.findViewById(R.id.positive);
         Button neutral = (Button) view.findViewById(R.id.neutral);
         Button negative = (Button) view.findViewById(R.id.negative);
 
-        ArrayList<String> userData = new ArrayList<>();
+        positive.setOnClickListener(this);
+        negative.setOnClickListener(this);
+        neutral.setOnClickListener(this);
 
-       positive.setOnClickListener(this);
-       negative.setOnClickListener(this);
-       neutral.setOnClickListener(this);
+        patientName.setText(Profile.getInstance().getName());
 
         return view;
+    }
 
+    @Override
+    public void onStart(){
+        if(patientName != null){
+            patientName.setText(Profile.getInstance().getName());
+        }
+        super.onStart();
     }
 
     public void printName(View caller){
@@ -75,25 +74,25 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-            public String getDate(){
+    public String getDate(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSZZZZZ");
+        String  currentDate = simpleDateFormat.format(new Date());
+        return currentDate;
+    }
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSZZZZZ");
-            String  currentDate = simpleDateFormat.format(new Date());
-            return currentDate;
-        }
+    public void savePositive(){
+        Gson gson = new Gson();
+        // userData.add(1, getDate());
+        Toast.makeText(getContext(), gson.toJson(Profile.getInstance()), Toast.LENGTH_SHORT).show();
+    }
 
-        public void savePositive(){
-            Gson gson = new Gson();
-           // userData.add(1, getDate());
-            Toast.makeText(getContext(), gson.toJson(Profile.getInstance()), Toast.LENGTH_SHORT).show();
-        }
-        public void saveNeutral(){
-            //userData.add(0, getDate());
-            Toast.makeText(getContext(), "DEBUG0" + getDate(), Toast.LENGTH_SHORT).show();
-        }
-        public void saveNegative(){
-            //userData.add(-1, getDate());
-            Toast.makeText(getContext(), "DEBUG-1 "+ getDate(), Toast.LENGTH_SHORT).show();
-        }
+    public void saveNeutral(){
+        //userData.add(0, getDate());
+        Toast.makeText(getContext(), "DEBUG0" + getDate(), Toast.LENGTH_SHORT).show();
+    }
 
+    public void saveNegative(){
+        //userData.add(-1, getDate());
+        Toast.makeText(getContext(), "DEBUG-1 "+ getDate(), Toast.LENGTH_SHORT).show();
+    }
 }
