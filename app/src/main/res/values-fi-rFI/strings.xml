@@ -46,4 +46,6 @@ Hoito\n - Kivun hoitoon tavallisia tulehduskipulääkkeitä/n
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
+    <string name="plan_name_nasal">PLACEHOLDER</string>
+    <string name="plan_content_nasal">PLACEHOLDER</string>
 </resources>

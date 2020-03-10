@@ -45,4 +45,8 @@ Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner./n
     <string name="fragment_settings_language_eng">Engelska</string>
     <string name="fragment_settings_language_fin">Finska</string>
     <string name="fragment_settings_language_swe">Svenska</string>
+    <string name="plan_name_septplasty">PLACEHOLDER</string>
+    <string name="plan_content_nasal">PLACEHOLDER</string>
+    <string name="plan_content_septoplasty">PLACEHOLDER</string>
+    <string name="plan_name_nasal">PLACEHOLDER</string>
 </resources>
