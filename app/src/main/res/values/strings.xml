@@ -15,8 +15,8 @@
         - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
         - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
          Treatment- Next day from the operation rest\n  - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
-<string name="plan_name_nasal">Nenäpolyyppien poisto </string>
-    <string name="plan_content_nasal" >Nasal</string>
+    <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
+    <string name="plan_content_nasal">Nasal</string>
     <string name="licence" translatable="false">
        Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -45,7 +45,6 @@ The buttons only appear when an input is needed. Keep in mind the next time you\
 See your own history by pressing the show history button.</string>
 
 
-
     <string name="listView_button">Scan a QR-Code</string>
     <string name="listView_notification">No plan selected, if you cannot get the camera working write the numbers in the text box below and press the button.</string>
 
@@ -63,7 +62,7 @@ See your own history by pressing the show history button.</string>
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
-    
+
     <string-array name="fragment_settings_content">
         <item>Kieli</item>
         <item>Nollaa sovellus</item>

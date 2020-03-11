@@ -17,12 +17,12 @@ public class PlanList {
     private PlanList(){
         plans = new ArrayList<>();
 
-        plans.add(new SimplePlan("Nasal", "444", R.string.plan_content_nasal, R.drawable.nenakannu));
-        plans.add(new SimplePlan("Septoplasty","222",R.string.plan_content_septoplasty,R.drawable.nenakannu));
+        plans.add(new SimplePlan("Nasal", "222", R.string.plan_content_nasal, R.drawable.nenakannu, R.drawable.nasal));
+        plans.add(new SimplePlan("Septoplasty","444",R.string.plan_content_septoplasty,R.drawable.nenakannu,R.drawable.secto));
 
         idindex = new ArrayList<>();
-        idindex.add("444");
         idindex.add("222");
+        idindex.add("444");
 
     }
 

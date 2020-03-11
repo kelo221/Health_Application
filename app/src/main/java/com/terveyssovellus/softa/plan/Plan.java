@@ -10,7 +10,6 @@ public class Plan {
     private List<Forbidden> prohibited;
     private List<Symptom> symptoms;
 
-
     public Plan(int id,
                 String name,
                 List<Treatment> treatments,

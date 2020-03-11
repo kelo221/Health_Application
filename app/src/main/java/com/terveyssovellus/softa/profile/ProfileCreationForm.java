@@ -92,10 +92,4 @@ public class ProfileCreationForm extends AppCompatActivity {
                 || !ageString.equals(String.valueOf(age))
                 || ageString.equals("");
     }
-
-    public void skip(View caller){
-        List<Mood> emptyMoodList = new ArrayList<>();
-        Profile.getInstance().setProfile("",0,-1,true,"fi",new Plan(),"",emptyMoodList);
-        finish();
-    }
 }

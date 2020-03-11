@@ -3,7 +3,8 @@
     package="com.terveyssovellus.softa">
 
     <uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QrReader"></activity>
+        <activity android:name=".PlanView"></activity>
+        <activity android:name=".QrReader" />
         <activity android:name=".fragments.content.Licences" />
         <activity android:name=".fragments.content.LanguageSelection" />
         <activity android:name=".profile.SplashActivity">

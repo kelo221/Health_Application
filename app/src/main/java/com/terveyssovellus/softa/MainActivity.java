@@ -95,13 +95,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void onStart(){
-        viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
+        //viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
         writePrefs();
         super.onStart();
     }
 
     protected void onRestart(){
-        viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
+        //viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
         super.onRestart();
     }
 
