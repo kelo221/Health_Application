@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     private SettingsFragment settingsFragment;
 
     public static final String TARGET_FRAGMENT = "targetFragment";
-
     public static final String HAOMA_DATA = "haomaData";
     public static final String PROFILE_DATA = "profiledata";
     public static final String FIRST_USE = "firstUse";
@@ -186,17 +185,5 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return fragmentTitle.get(position);
         }
-    }
-
-    public void test(View view) {
-        //setContentView(R.layout.current_program);
-
-        //Intent intent = new Intent(this, CurrentProgram.class);
-        //startActivity(intent);
-    }
-
-    public void testQR(View caller){
-        //Intent intent = new Intent(this, QR_reader.class);
-        //startActivity(intent);
     }
 }
