@@ -142,19 +142,40 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         //Plan plan = Profile.getInstance().getPlan();
         Profile profile = Profile.getInstance();
         String planString = profile.getPlanString();
+        boolean planfound = false;
 
         List<SimplePlan> plans = PlanList.getInstance().getPlans();
+        List<String> idindex = PlanList.getInstance().getIdindex();
 
+        int planIndex = idindex.indexOf(planString);
+
+        if (planIndex == -1){
+            profile.setPlanSelectedFalse();
+            setVisibility();
+        }
+        else {
+            Log.wtf("aaaa","bbb");
+            SimplePlan plan = plans.get(planIndex);
+            planContents.setText(getResources().getString(plan.getContents()));
+            planImage.setImageResource(plan.getImage());
+
+        }
+
+        /*
         for(int i=0;i<plans.size();i++){
             if(plans.get(i).getId().equals(planString)){
                 planContents.setText(plans.get(i).getContents());
                 planImage.setImageResource(plans.get(i).getImage());
                 setVisibility();
-                return;
+                planfound = true;
             }
         }
-        Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
-
+        if(!planfound){
+            profile.setPlanSelectedFalse();
+            setVisibility();
+        }
+        //Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
+        */
         }
     }
 

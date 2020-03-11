@@ -13,7 +13,7 @@ public class SimplePlan {
     }
 
     public String getId() {return id;}
-    public String getContents() {return Integer.toString(contents);}
+    public int getContents() {return contents;}
     public String getName(){return name;}
     public int getImage(){return image;}
 }
