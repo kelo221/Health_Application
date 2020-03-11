@@ -16,8 +16,8 @@ public class PlanList {
     private PlanList(){
         plans = new ArrayList<>();
 
-        plans.add(new SimplePlan("Nasal", "444", R.string.plan_content_nasal, "asd"));
-        plans.add(new SimplePlan("Septoplasty","222",R.string.plan_content_septoplasty,"asd"));
+        plans.add(new SimplePlan("Nasal", "444", R.string.plan_content_nasal, R.drawable.nenakannu));
+        plans.add(new SimplePlan("Septoplasty","222",R.string.plan_content_septoplasty,R.drawable.nenakannu));
 
 
     }
