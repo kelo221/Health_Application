@@ -5,9 +5,12 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,13 +70,15 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
         qrButton.setOnClickListener(this);
         codeButton.setOnClickListener(this);
-        codeInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
+        codeInput.setOnEditorActionListener(new EditText.OnEditorActionListener() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus) {
-                    selectPlanCode();
-                    hideKeyboard();
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    codeButton.performClick();
+                    return true;
                 }
+                return false;
             }
         });
         return view;
@@ -128,6 +133,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         if(TextUtils.isEmpty(input)){
             Toast.makeText(getContext(),"Input something!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
         } else if(PlanList.getInstance().planExists(input)){
+            Toast.makeText(getContext(),"Plan found",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
             Profile.getInstance().setPlanString(input);
             setVisibility();
             hideKeyboard();
