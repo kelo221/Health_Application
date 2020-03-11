@@ -8,12 +8,12 @@
         consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
         quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
         qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
-<string name="plan_name_nasal">Nenäpolyyppien poisto </string>
+    <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
 
 
-    <string name="plan_content_nasal" >Nasal</string>
+    <string name="plan_content_nasal">Nasal</string>
 
-<string name="licence" translatable="false">Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
+    <string name="licence" translatable="false">Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at \n \nhttp://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -50,7 +50,7 @@
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
-    
+
     <string-array name="fragment_settings_content">
         <item>Kieli</item>
         <item>Nollaa sovellus</item>

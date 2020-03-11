@@ -23,6 +23,7 @@ import com.google.gson.Gson;
 import com.terveyssovellus.softa.fragments.AddFragment;
 import com.terveyssovellus.softa.fragments.HomeFragment;
 import com.terveyssovellus.softa.fragments.HelpFragment;
+import com.terveyssovellus.softa.fragments.ListFragment;
 import com.terveyssovellus.softa.fragments.SettingsFragment;
 import com.terveyssovellus.softa.profile.Profile;
 import com.terveyssovellus.softa.profile.ProfileCreationForm;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private HomeFragment homeFragment;
     private HelpFragment helpFragment;
     private AddFragment addFragment;
+    private ListFragment listFragment;
     private SettingsFragment settingsFragment;
 
     public static final String TARGET_FRAGMENT = "targetFragment";
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         homeFragment = new HomeFragment();
         addFragment = new AddFragment();
+        listFragment = new ListFragment();
         helpFragment = new HelpFragment();
         settingsFragment = new SettingsFragment();
 
@@ -70,7 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(homeFragment, getString(R.string.fragment_name_home));
-        viewPagerAdapter.addFragment(addFragment, getString(R.string.fragment_name_add));
+        if(Profile.getInstance().getPosition() == 1){
+            viewPagerAdapter.addFragment(listFragment, getString(R.string.fragment_name_add));
+        } else {
+            viewPagerAdapter.addFragment(addFragment, getString(R.string.fragment_name_add));
+        }
         viewPagerAdapter.addFragment(helpFragment, getString(R.string.fragment_name_help));
         viewPagerAdapter.addFragment(settingsFragment, getString(R.string.fragment_name_settings));
         viewPager.setAdapter(viewPagerAdapter);
