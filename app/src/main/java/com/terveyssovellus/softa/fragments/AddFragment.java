@@ -60,8 +60,6 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
         setVisibility();
 
-        //qrInput = view.findViewById(R.id.numberInput);
-        //qrInput.setText("");
         qrButton.setOnClickListener(this);
         codeButton.setOnClickListener(this);
         return view;
@@ -70,9 +68,6 @@ public class AddFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.listView_button:
-                qrButtonPressed();
-                break;
             case R.id.plan_select_qr:
                 selectPlanQR();
                 break;
@@ -82,6 +77,8 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    /**
+     */
     private void setVisibility(){
         Profile profile = Profile.getInstance();
         if(profile.planSelected()){
@@ -151,26 +148,5 @@ public class AddFragment extends Fragment implements View.OnClickListener {
                 profile.setPlanSelectedFalse();
                 setVisibility();
         }
-    }
-
-    public void qrButtonPressed() {
-
-        if (TextUtils.isEmpty(qrInput.getText().toString())) {
-            Toast.makeText(getContext(), "Empty field not allowed!",
-                    Toast.LENGTH_SHORT).show();
-        } else {
-            value = qrInput.getText().toString();
-            setQrActivity();
-        }
-    }
-
-    public void setQrActivity(){
-
-
-        Intent intent = new Intent(getContext(), CurrentProgram.class);
-        intent.putExtra("layout_selector", value.trim());
-        startActivity(intent);
-
-
     }
 }
