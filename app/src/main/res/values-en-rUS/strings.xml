@@ -34,4 +34,13 @@
     <string name="plan_name_nasal">Nasal polyps</string>
     <string name="listView_button">Scan a QR-Code</string>
     <string name="listView_notification">No plan selected, if you cannot get the camera working write the numbers in the text box below and press the button.</string>
+    <string name="plan_name_knee">Knee operation</string>
+    <string name="plan_content_knee">Knee operation \n Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
+        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
+        Symptoms\n  Normaal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
+        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
+        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
+         Treatment- Next day from the operation rest\n
+        - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
+
 </resources>

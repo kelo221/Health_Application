@@ -53,7 +53,7 @@
         ->   -> YHTEYS hoitaneeseen yksikköön !\n Hoito  \n - Kannuhoito (seuraavana päivänä operaatiosta)\n
         - useita kertoja vuorokaudessa- 1-2 viikkoa\n</string>
     <string name="listView_button">Scannaa QR-koodi.</string>
-    <string name="plan_name_knee">Nenäpolyyppien poisto </string>
+    <string name="plan_name_knee">Polvioperaatio </string>
     <string name="plan_content_knee">Kielletty \n - Autolla ajo: 24h\n - Saunominen\n
         Vältettävä:\n - Lentäminen : 1-2 viikkoa\n - Ponnistelu : 1 viikko\n - Rasitus : 1 viikkoa\n - Saunominen : 1 viikko\n
          Oireet\n

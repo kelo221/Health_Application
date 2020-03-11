@@ -8,6 +8,13 @@
         consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
         quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
         qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
+    <string name="plan_name_knee">Knee operation</string>
+    <string name="plan_content_knee">"Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
+        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
+        Symptoms\n  Normaal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
+        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
+        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
+         Treatment- Next day from the operation rest\n  - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
 <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
     <string name="plan_content_nasal" >Nasal</string>
     <string name="licence" translatable="false">
