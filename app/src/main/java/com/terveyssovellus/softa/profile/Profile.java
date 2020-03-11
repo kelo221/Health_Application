@@ -81,6 +81,7 @@ public class Profile {
     public Plan getPlan()       {return this.plan;}
     public String getLanguage() {return this.language;}
     public String getPlanString(){return this.planString;}
+    public List<Mood>getMoodList(){return this.moodList;}
 
     public void setName(String name)     {this.name = name;}
     public void setAge(int age)          {this.age = age;}

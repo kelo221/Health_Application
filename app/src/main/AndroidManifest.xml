@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlanView"></activity>
+        <activity android:name=".profile.MoodHistory"></activity>
+        <activity android:name=".PlanView" />
         <activity android:name=".QrReader" />
         <activity android:name=".fragments.content.Licences" />
         <activity android:name=".fragments.content.LanguageSelection" />
