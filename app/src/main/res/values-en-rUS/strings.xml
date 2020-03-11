@@ -53,7 +53,16 @@
     <string name="feeling_neut">I hope you get better soon.</string>
     <string name="feeling_good">Good to hear!</string>
     <string name="plan_select_qr_button">Select with a QR-code</string>
-    <string name="plan_select_code_button">Select with a code</string>
-    <string name="plan_select_code_hint">Input code here</string>
+    <string name="plan_select_code_button">Select with code</string>
+    <string name="plan_select_code_hint">Input code</string>
+    <string name="plan_select_qr_button">Select with QR</string>
+    <string name="plan_select_code_button">Select with code</string>
+    <string name="plan_select_code_hint">Input code</string>
+    <string name="forbidden_driving">Driving</string>
+    <string name="forbidden_sauna">Going to Sauna</string>
+    <string name="treatment_nasal_jug">Using nasal jug</string>
+    <string name="symptom_heavy_bleeding">Heavy bleeding</string>
+    <string name="symptom_clogged_nasal_passages">Clogged nasal passages</string>
+    <string name="plan_nasal_polyop_removal">Nasal polyp removal</string>
 
 </resources>
