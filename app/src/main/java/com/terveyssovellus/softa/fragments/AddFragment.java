@@ -53,7 +53,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
         View view = inflater.inflate(R.layout.fragment_add, container, false);
 
-        Button qrButton2 = (Button) view.findViewById(R.id.listView_button);
+
         qrButton = (Button)view.findViewById(R.id.plan_select_qr);
         codeButton = (Button)view.findViewById(R.id.plan_select_code);
         codeInput = (EditText)view.findViewById(R.id.codeInput);
