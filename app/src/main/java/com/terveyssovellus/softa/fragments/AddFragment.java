@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
     EditText qrInput,codeInput;
     TextView planContents;
+    ImageView planImage;
     Button qrButton,codeButton;
     ScrollView planWrapper;
     String value;
@@ -56,6 +58,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         codeButton = (Button)view.findViewById(R.id.plan_select_code);
         codeInput = (EditText)view.findViewById(R.id.codeInput);
         planWrapper = (ScrollView)view.findViewById(R.id.plan_content_wrapper);
+        planImage = (ImageView)view.findViewById(R.id.plan_image);
         planContents = (TextView)view.findViewById(R.id.plan_contents);
 
         setVisibility();
@@ -140,10 +143,12 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         switch(plan){
             case "222":
                 planContents.setText(R.string.plan_content_septoplasty);
+                planImage.setImageResource(R.drawable.jumppaohje);
                 break;
             case "444":
                 planContents.setText(R.string.plan_content_nasal);
                 break;
+
             default:
                 profile.setPlanSelectedFalse();
                 setVisibility();
