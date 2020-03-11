@@ -67,6 +67,15 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
         qrButton.setOnClickListener(this);
         codeButton.setOnClickListener(this);
+        codeInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    selectPlanCode();
+                    hideKeyboard();
+                }
+            }
+        });
         return view;
     }
 
@@ -118,64 +127,33 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         String input = codeInput.getText().toString();
         if(TextUtils.isEmpty(input)){
             Toast.makeText(getContext(),"Input something!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
-        } else if(input.equals("222")||input.equals("444")){
+        } else if(PlanList.getInstance().planExists(input)){
             Profile.getInstance().setPlanString(input);
             setVisibility();
             hideKeyboard();
         } else {
             Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
-
-            /* List<Plan> plans = PlanArchive.getInstance().getPlans();
-            for(int i=0;i<plans.size();i++){
-                if(plans.get(i).getId() == 1){
-                    Profile.getInstance().setPlan(plans.get(i));
-                    setVisibility();
-                    return;
-                }
-            }
-            Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
-            */
         }
     }
 
     private void printPlanContents(){
-        //Plan plan = Profile.getInstance().getPlan();
         Profile profile = Profile.getInstance();
         String planString = profile.getPlanString();
         boolean planfound = false;
 
         List<SimplePlan> plans = PlanList.getInstance().getPlans();
-        List<String> idindex = PlanList.getInstance().getIdindex();
 
-        int planIndex = idindex.indexOf(planString);
-
-        if (planIndex == -1){
-            profile.setPlanSelectedFalse();
-            setVisibility();
-        }
-        else {
-            Log.wtf("aaaa","bbb");
-            SimplePlan plan = plans.get(planIndex);
-            planContents.setText(getResources().getString(plan.getContents()));
-            planImage.setImageResource(plan.getImage());
-
-        }
-
-        /*
         for(int i=0;i<plans.size();i++){
             if(plans.get(i).getId().equals(planString)){
                 planContents.setText(plans.get(i).getContents());
                 planImage.setImageResource(plans.get(i).getImage());
-                setVisibility();
                 planfound = true;
             }
         }
-        if(!planfound){
+        if(!planfound) {
             profile.setPlanSelectedFalse();
             setVisibility();
         }
-        //Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
-        */
-        }
     }
+}
 

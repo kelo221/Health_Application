@@ -7,7 +7,6 @@ import java.util.List;
 
 public class PlanList {
     private List<SimplePlan> plans;
-    private List<String> idindex;
     private static final PlanList archive = new PlanList();
 
     public static PlanList getInstance(){
@@ -20,15 +19,19 @@ public class PlanList {
         plans.add(new SimplePlan("Nasal", "222", R.string.plan_content_nasal, R.drawable.nenakannu, R.drawable.nasal));
         plans.add(new SimplePlan("Septoplasty","444",R.string.plan_content_septoplasty,R.drawable.nenakannu,R.drawable.secto));
 
-        idindex = new ArrayList<>();
-        idindex.add("222");
-        idindex.add("444");
-
     }
 
     public List<SimplePlan> getPlans() {
         return plans;
     }
 
-    public List<String> getIdindex(){return idindex;}
+    public Boolean planExists(String planString){
+        Boolean planExists = false;
+        for(int i=0;i<plans.size();i++){
+            if(planString.equals(plans.get(i).getId())){
+                planExists = true;
+            }
+        }
+        return planExists;
+    }
 }
