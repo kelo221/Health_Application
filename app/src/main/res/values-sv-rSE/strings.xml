@@ -59,4 +59,5 @@
     <string name="listView_button">Scan a QR-Code</string>
     <string name="listView_notification">No plan selected.</string>
     <string name="plan_name_knee">Knäoperation</string>
+    <string name="plan_content_knee">Knäoperation</string>
 </resources>
