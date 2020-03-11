@@ -45,9 +45,7 @@
     <string name="help_qr"> Select the plan by either inputting code or using the camera to scan for
 a qr-code, and pressing the associated button.</string>
 
-    <string name="help_home"> Use the smiley buttons to input how well you succeeded with the given instructions.
-The buttons only appear when an input is needed. Keep in mind the next time you\'ll be asked to give input.
-See your own history by pressing the show history button.</string>
+    <string name="help_home">help_home</string>
 
 
     <string name="listView_button">Scan a QR-Code</string>
@@ -60,6 +58,11 @@ See your own history by pressing the show history button.</string>
     <string name="fragment_name_help">Apu</string>
     <string name="fragment_name_settings">Asetukset</string>
 
+    <string name="greetings">NOTWORKING</string>
+
+    <string name="hei">NOTWORKING2</string>
+    <string name="history">history</string>
+
 
     <string name="fragment_settings_content_reset">Paina nappi pohjaan nollataksesi sovelluksen</string>
     <string name="fragment_settings_content_versio">Versio 0.1</string>
@@ -67,6 +70,11 @@ See your own history by pressing the show history button.</string>
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
+
+    <string name="feeling_good">feeling_good</string>
+    <string name="feeling_neut">feeling_neut</string>
+    <string name="feeling_bad">feeling_bad</string>
+
 
     <string-array name="fragment_settings_content">
         <item>Kieli</item>

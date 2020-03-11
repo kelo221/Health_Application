@@ -62,4 +62,15 @@
     <string name="plan_content_knee">Knäoperation</string>
     <string name="ICE">Ring nödnumret</string>
     <string name="ICE_INFO">I nödfall ring detta nummer.</string>
+    <string name="help_home">Använd smiley-knapparna för att mata in hur väl du mår. Se din egen historia genom att trycka på knappen Visa historik.</string>
+    <string name="help_qr">Välj planen genom att antingen mata in kod eller använda kameran för att söka efter en qr-kod och trycka på tillhörande knapp.</string>
+    <string name="greetings">Hur mår du idag?</string>
+    <string name="hei">Hej</string>
+    <string name="history">Visa historia</string>
+    <string name="feeling_good">Skönt att höra</string>
+    <string name="feeling_neut">Jag hoppas du blir bättre snart.</string>
+    <string name="feeling_bad">Bli bättre snart! Se till att dina symtoner är normala.</string>
+    <string name="plan_select_qr_button">Välj med en QR-kod</string>
+    <string name="plan_select_code_button">Välj med en kod</string>
+    <string name="plan_select_code_hint">Inmatningskod</string>
 </resources>

@@ -34,28 +34,53 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:id="@+id/imageView4"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
             android:src="@drawable/qr_helper"
             app:layout_constraintBottom_toTopOf="@+id/buttonCall"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/qr_helper" />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="200dp"
+            android:layout_height="150sp"
+            android:src="@drawable/home_helper"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/home_helper" />
+
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="300sp"
+            android:layout_width="330sp"
             android:layout_height="wrap_content"
             android:text="@string/help_qr"
             app:layout_constraintBottom_toTopOf="@+id/buttonCall"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintHorizontal_bias="0.02"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="330sp"
+            android:layout_height="wrap_content"
+            android:text="@string/help_home"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

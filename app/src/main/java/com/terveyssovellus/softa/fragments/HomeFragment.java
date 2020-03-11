@@ -50,26 +50,24 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onStart(){
-        String greetingString = "Hei "+Profile.getInstance().getName();
-        greeting.setText(greetingString);
-        String questionString = "Kuinka voit tänään?";
-        question.setText(questionString);
-        super.onStart();
+       greeting.setText(getResources().getString(R.string.hei) + " " + Profile.getInstance().getName());
+       question.setText(R.string.greetings);
+       super.onStart();
     }
 
     @Override
     public void onClick(View caller) {
         switch (caller.getId()){
             case R.id.positive:
-                Toast.makeText(getContext(), "Mukava kuulla! Jatka paranemista.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), R.string.feeling_good, Toast.LENGTH_LONG).show();
                 saveMood(caller);
                 break;
             case R.id.neutral:
-                Toast.makeText(getContext(), "Toivottavasti olosi kohenee pian!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), R.string.feeling_neut, Toast.LENGTH_LONG).show();
                 saveMood(caller);
                 break;
             case R.id.negative:
-                Toast.makeText(getContext(), "Harmillista, tarkastathan hoito-ohjeesta ovatko oireesi normaaleja", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), R.string.feeling_bad, Toast.LENGTH_LONG).show();
                 saveMood(caller);
                 break;
             case R.id.mood_history_button:

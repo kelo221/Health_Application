@@ -44,5 +44,16 @@
         - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
     <string name="ICE">Dial the emergency number</string>
     <string name="ICE_INFO">In case of emergency dial this number.</string>
+    <string name="help_qr">" Select the plan by either inputting code or using the camera to scan for a qr-code, and pressing the associated button."</string>
+    <string name="help_home">Use the smiley buttons to input how well you are feeling. See your own history by pressing the show history button.</string>
+    <string name="greetings">How are you feeling today?</string>
+    <string name="hei">Hi</string>
+    <string name="history">Show history</string>
+    <string name="feeling_bad">Get better soon! Make sure your sympthons are normal.</string>
+    <string name="feeling_neut">I hope you get better soon.</string>
+    <string name="feeling_good">Good to hear!</string>
+    <string name="plan_select_qr_button">Select with a QR-code</string>
+    <string name="plan_select_code_button">Select with a code</string>
+    <string name="plan_select_code_hint">Input code here</string>
 
 </resources>
