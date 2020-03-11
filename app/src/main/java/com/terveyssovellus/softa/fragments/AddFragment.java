@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.gson.Gson;
 import com.terveyssovellus.softa.CurrentProgram;
+import com.terveyssovellus.softa.QrReader;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.plan.Plan;
 import com.terveyssovellus.softa.plan.PlanArchive;
@@ -94,8 +95,8 @@ public class AddFragment extends Fragment implements View.OnClickListener {
     }
 
     private void selectPlanQR(){
-        //Intent intent = new Intent(getContext(), PlanSelectQR.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getContext(), QrReader.class);
+        startActivity(intent);
     }
 
     private void selectPlanCode(){
