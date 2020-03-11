@@ -18,7 +18,7 @@ import com.terveyssovellus.softa.R;
 public class HelpFragment extends Fragment implements View.OnClickListener {
 
     public HelpFragment(){}
-    final String alarmnumber = "tel:00030";
+    final String alarmNumber = "tel:00030";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +42,7 @@ public class HelpFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View arg0) {
             Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse( alarmnumber));
+            callIntent.setData(Uri.parse( alarmNumber));
 
             if (ActivityCompat.checkSelfPermission(getContext(),
                     Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {

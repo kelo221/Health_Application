@@ -64,4 +64,6 @@
         -> -> YHTEYS hoitaneeseen yksikköön !\n Hoito  \n -  Seuraavana päivänä operaatiosta lepoa\n
         - Voimisteluohjeiden (kuva) aloittaminen ja lisäys viikottain \n</string>
     <string name="listView_notification">Ei hoito-ohjetta valittuna, jos kamera ei toimi lisää koodi manuaalisesti alhaalla olevaan kenttään ja paina nappia.</string>
+    <string name="ICE">Soita hätänumeroon</string>
+    <string name="ICE_INFO">Hätätilanteessa soita tähän numeroon.</string>
 </resources>

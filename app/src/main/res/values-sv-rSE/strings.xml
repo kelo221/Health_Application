@@ -60,4 +60,6 @@
     <string name="listView_notification">No plan selected.</string>
     <string name="plan_name_knee">Knäoperation</string>
     <string name="plan_content_knee">Knäoperation</string>
+    <string name="ICE">Ring nödnumret</string>
+    <string name="ICE_INFO">I nödfall ring detta nummer.</string>
 </resources>
