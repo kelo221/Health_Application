@@ -87,6 +87,9 @@ public class SettingsFragment extends Fragment {
         return view;
     }
 
+    /** Class made by Ville and Jere
+     *  resetProfile simply does as the name implies.
+     */
     private void resetProfile(){
         Profile.getInstance().resetProfile();
         Intent intent = new Intent(getContext(), ProfileCreationForm.class);
@@ -95,3 +98,4 @@ public class SettingsFragment extends Fragment {
         startActivity(intent);
     }
 }
+

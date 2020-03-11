@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plan_name_septplasty">Näsplypernas amortering</string>
+    <string name="plan_name_septplasty">Septoplasty</string>
     <string name="plan_content_septoplasty">Förbjuden \n - Köra bil: 24h\n - Rör ej näsan innifrån (!)\n Undvika:\n - Ansträngning: 1 vecka\n
         - Påfrestning : 1 vecka \n - Bastu : 1 vecka \n - Stark snytning: 1 vecka \n
         Symtom:\n
@@ -11,9 +11,6 @@
         \n - Feber över 38 C° *
         \n - Kraftig värk *\n- Riklig varig eller dålig slemning * \n
         - Distinkt näsområdets svällining * *\n -> -> KONTAKT genast hälsovårdcentral ! \n eller utanför abetstid sjukhusets tjänstgörsskift Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner./n  - Näsdroppar eller nässpray kan användas under de första dagarna att lugna respiration.\n</string>
-
-
-
     <string name="app_name">Haoma</string>
     <string name="profile_create_button">Börja</string>
     <string name="name_error">Namn är obligatorisk</string>
@@ -61,4 +58,6 @@
     </string-array>
     <string name="listView_button">Scan a QR-Code</string>
     <string name="listView_notification">No plan selected.</string>
+    <string name="plan_name_knee">Knäoperation</string>
+    <string name="plan_content_knee">Knäoperation</string>
 </resources>

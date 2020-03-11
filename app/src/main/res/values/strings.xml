@@ -8,19 +8,23 @@
         consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
         quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
         qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
-    <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
-
-
-    <string name="plan_content_nasal">Nasal</string>
-
-    <string name="licence" translatable="false">Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at \n \nhttp://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License. </string>
-
+    <string name="plan_name_knee">Knee operation</string>
+    <string name="plan_content_knee">"Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
+        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
+        Symptoms\n  Normal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
+        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
+        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
+         Treatment- Next day from the operation rest\n  - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
+<string name="plan_name_nasal">Nenäpolyyppien poisto </string>
+    <string name="plan_content_nasal" >Nasal</string>
+    <string name="licence" translatable="false">
+       Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at \n \n http://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License. </string>
     <string name="profile_create_button">Aloita</string>
     <string name="name_error">Nimeä ei voi jättää tyhjäksi</string>
     <string name="age_error">Tarkista ikä</string>
@@ -32,6 +36,18 @@
     <string name="profile_form_age_default">Syötä ikäsi</string>
     <string name="profile_form_welcome">Tervetuloa käyttämään Haomaa!</string>
     <string name="profile_form_skip" translatable="false">Nasal</string>
+
+    <string name="help_qr">Select the plan by either inputting code or using the camera to scan for
+a qr-code, and presssing the associated button.
+</string>
+
+    <string name="help_home">Use the smiley buttons to input how well you succeeded with the given instructions.
+The buttons only appear when an input is needed. Keep in mind the next time you'll be asked to give input.
+See your own history by pressing the show history button.
+
+</string>
+
+
 
     <string name="listView_button">Scan a QR-Code</string>
     <string name="listView_notification">No plan selected, if you cannot get the camera working write the numbers in the text box below and press the button.</string>
@@ -50,7 +66,7 @@
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
-
+    
     <string-array name="fragment_settings_content">
         <item>Kieli</item>
         <item>Nollaa sovellus</item>
@@ -60,20 +76,15 @@
     </string-array>
     <string name="plan_content_septoplasty">Septoplasty</string>
     <string name="plan_name_septplasty">Septoplastia</string>
-
-
     <!-- Language of Fragments -->
-
     <!-- Plan selection stuff -->
     <string name="plan_select_qr_button">Select with QR</string>
     <string name="plan_select_code_button">Select with code</string>
     <string name="plan_select_code_hint">Input code</string>
-
     <string name="forbidden_driving">Autolla ajo</string>
     <string name="forbidden_sauna">Saunassa käynti</string>
     <string name="treatment_nasal_jug">Nenäkannun käyttö</string>
     <string name="symptom_heavy_bleeding">Voimakas verenvuoto</string>
     <string name="symptom_clogged_nasal_passages">Tukkoiset nenäkanavat</string>
     <string name="plan_nasal_polyop_removal">Nenäpolyyppien poisto</string>
-
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
-
     <string name="plan_name_septplasty">Septoplastia</string>
     <string name="plan_content_septoplasty">Kielletty \n
         - Autolla ajo: 24h\n- Nenän sisään koskeminen (!)\n Vältettävä:\n
@@ -9,10 +8,10 @@
         - Voimallinen niistäminen : 1 viikko\n\n
         Oireet:\n
         Normaalit :\n
-        - Alussa limakalvot ovat turvoksissa
-        - Nenän limakalvolle kertyy kuivunutta eritettä ja verta
+        - Alussa limakalvot ovat turvoksissa\n
+        - Nenän limakalvolle kertyy kuivunutta eritettä ja verta\n
         (hoito: huuhtelu kostuttaminen)\n
-        - Alussa voi tulla kirkasta verta voi tulla eritteen seassa, tummempaa hyytynyttä verta voi tulla viikon ajan.
+        - Alussa voi tulla kirkasta verta voi tulla eritteen seassa, tummempaa hyytynyttä verta voi tulla viikon ajan.\n
         - Tukkoisuus helpottaa vähitellen 1-2 kk kuluessa.
         Hälyttävät oireet:\n
         - Voimakas verenvuoto yli 15 min, joka ei asetu nenää puristamalla/n
@@ -45,7 +44,24 @@
     <string name="fragment_settings_language_eng">Englanti</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
-    <string name="plan_content_nasal">Kielletty \\n - Autolla ajo: 24h\\n - Nenän sisään koskeminen\\n Vältettävä:\\n - Lentäminen : 1-2 viikkoa\\n - Ponnistelu : 1 viikko\\n - Rasitus : 1 viikkoa\\n - Saunominen : 1 viikko\\n - Voimallinen niistäminen : 1 viikko\\n     \\n Oireet\\n      Normaalit :\\n - Tukkoisuus (hoito: supistavat nenätipat)\\n - Eritteiden kuivuminen nenään\\n(hoito: huuhtelu kostuttaminen)\\n  Hälyttävät oireet\\n - Voimakas verenvuoto *\\n - Kuume yli 38 C° *\\n - Voimakas kipu *\\n - Runsas märkäinen tai pahanhajuinen limaneritys *\\n - Ulospäin näkyvä nenän alueen turvotus * *\\n ->   -> YHTEYS hoitaneeseen yksikköön !\\n Hoito  \\n - Kannuhoito (seuraavana päivänä operaatiosta)\\n - useita kertoja vuorokaudessa- 1-2 viikkoa\\n</string>
+    <string name="plan_content_nasal">Kielletty \n - Autolla ajo: 24h\n - Nenän sisään koskeminen\n
+        Vältettävä:\n - Lentäminen : 1-2 viikkoa\n - Ponnistelu : 1 viikko\n - Rasitus : 1 viikkoa\n - Saunominen : 1 viikko\n
+        - Voimallinen niistäminen : 1 viikko\n     \n Oireet\n
+        Normaalit :\n - Tukkoisuus (hoito: supistavat nenätipat)\n - Eritteiden kuivuminen nenään\n(hoito: huuhtelu kostuttaminen)\n
+        Hälyttävät oireet\n - Voimakas verenvuoto *\n - Kuume yli 38 C° *\n - Voimakas kipu *\n
+        - Runsas märkäinen tai pahanhajuinen limaneritys *\n - Ulospäin näkyvä nenän alueen turvotus * *\n
+        ->   -> YHTEYS hoitaneeseen yksikköön !\n Hoito  \n - Kannuhoito (seuraavana päivänä operaatiosta)\n
+        - useita kertoja vuorokaudessa- 1-2 viikkoa\n</string>
     <string name="listView_button">Scannaa QR-koodi.</string>
-    <string name="listView_notification">Ei hoito-ohjetta valittunai, jos kamera ei toimi lisää koodi manuaalisesti alhaalla olevaan kenttään ja paina nappia.</string>
+    <string name="plan_name_knee">Polvioperaatio </string>
+    <string name="plan_content_knee">Kielletty \n - Autolla ajo: 24h\n - Saunominen\n
+        Vältettävä:\n - Lentäminen : 1-2 viikkoa\n - Ponnistelu : 1 viikko\n - Rasitus : 1 viikkoa\n - Saunominen : 1 viikko\n
+         Oireet\n
+        Normaalit :\n - jomotus (hoito: venyttely verenkierron aktivoimiseksi)\n
+        - Turvotusta operaatioalueen ympäristössä\n
+        Hälyttävät oireet\n - Voimakas verenvuoto *\n - Voimakas särky *\n - Ongelmat liikuttaessa raajaa *\n
+        - Runsas märkäinen tai pahanhajuinen limaneritys *\n - Ulospäin näkyvä nenän alueen sinisyys * *\n
+        -> -> YHTEYS hoitaneeseen yksikköön !\n Hoito  \n -  Seuraavana päivänä operaatiosta lepoa\n
+        - Voimisteluohjeiden (kuva) aloittaminen ja lisäys viikottain \n</string>
+    <string name="listView_notification">Ei hoito-ohjetta valittuna, jos kamera ei toimi lisää koodi manuaalisesti alhaalla olevaan kenttään ja paina nappia.</string>
 </resources>

@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
     EditText qrInput,codeInput;
     TextView planContents;
+    ImageView planImage;
     Button qrButton,codeButton;
     ScrollView planWrapper;
     String value;
@@ -51,17 +53,16 @@ public class AddFragment extends Fragment implements View.OnClickListener {
 
         View view = inflater.inflate(R.layout.fragment_add, container, false);
 
-        Button qrButton2 = (Button) view.findViewById(R.id.listView_button);
+
         qrButton = (Button)view.findViewById(R.id.plan_select_qr);
         codeButton = (Button)view.findViewById(R.id.plan_select_code);
         codeInput = (EditText)view.findViewById(R.id.codeInput);
         planWrapper = (ScrollView)view.findViewById(R.id.plan_content_wrapper);
+        planImage = (ImageView)view.findViewById(R.id.plan_image);
         planContents = (TextView)view.findViewById(R.id.plan_contents);
 
         setVisibility();
 
-        //qrInput = view.findViewById(R.id.numberInput);
-        //qrInput.setText("");
         qrButton.setOnClickListener(this);
         codeButton.setOnClickListener(this);
         return view;
@@ -70,9 +71,6 @@ public class AddFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.listView_button:
-                qrButtonPressed();
-                break;
             case R.id.plan_select_qr:
                 selectPlanQR();
                 break;
@@ -82,6 +80,8 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    /**
+     */
     private void setVisibility(){
         Profile profile = Profile.getInstance();
         if(profile.planSelected()){
@@ -143,34 +143,15 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         switch(plan){
             case "222":
                 planContents.setText(R.string.plan_content_septoplasty);
+                planImage.setImageResource(R.drawable.jumppaohje);
                 break;
             case "444":
                 planContents.setText(R.string.plan_content_nasal);
                 break;
+
             default:
                 profile.setPlanSelectedFalse();
                 setVisibility();
         }
-    }
-
-    public void qrButtonPressed() {
-
-        if (TextUtils.isEmpty(qrInput.getText().toString())) {
-            Toast.makeText(getContext(), "Empty field not allowed!",
-                    Toast.LENGTH_SHORT).show();
-        } else {
-            value = qrInput.getText().toString();
-            setQrActivity();
-        }
-    }
-
-    public void setQrActivity(){
-
-
-        Intent intent = new Intent(getContext(), CurrentProgram.class);
-        intent.putExtra("layout_selector", value.trim());
-        startActivity(intent);
-
-
     }
 }
