@@ -24,6 +24,8 @@ import com.terveyssovellus.softa.QrReader;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.plan.Plan;
 import com.terveyssovellus.softa.plan.PlanArchive;
+import com.terveyssovellus.softa.plan.PlanList;
+import com.terveyssovellus.softa.plan.SimplePlan;
 import com.terveyssovellus.softa.profile.Profile;
 
 import java.util.Arrays;
@@ -122,8 +124,8 @@ public class AddFragment extends Fragment implements View.OnClickListener {
             hideKeyboard();
         } else {
             Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
-            /*
-            List<Plan> plans = PlanArchive.getInstance().getPlans();
+
+            /* List<Plan> plans = PlanArchive.getInstance().getPlans();
             for(int i=0;i<plans.size();i++){
                 if(plans.get(i).getId() == 1){
                     Profile.getInstance().setPlan(plans.get(i));
@@ -139,19 +141,20 @@ public class AddFragment extends Fragment implements View.OnClickListener {
     private void printPlanContents(){
         //Plan plan = Profile.getInstance().getPlan();
         Profile profile = Profile.getInstance();
-        String plan = profile.getPlanString();
-        switch(plan){
-            case "222":
-                planContents.setText(R.string.plan_content_septoplasty);
-                planImage.setImageResource(R.drawable.jumppaohje);
-                break;
-            case "444":
-                planContents.setText(R.string.plan_content_nasal);
-                break;
+        String planString = profile.getPlanString();
 
-            default:
-                profile.setPlanSelectedFalse();
+        List<SimplePlan> plans = PlanList.getInstance().getPlans();
+
+        for(int i=0;i<plans.size();i++){
+            if(plans.get(i).getId().equals(planString)){
+                planContents.setText(plans.get(i).getContents());
+                planImage.setImageResource(plans.get(i).getImage());
                 setVisibility();
+                return;
+            }
+        }
+        Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
+
         }
     }
-}
+

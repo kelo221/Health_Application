@@ -21,4 +21,8 @@ public class PlanList {
 
 
     }
+
+    public List<SimplePlan> getPlans() {
+        return plans;
+    }
 }

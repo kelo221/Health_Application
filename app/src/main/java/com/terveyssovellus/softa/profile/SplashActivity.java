@@ -10,10 +10,14 @@ import android.view.WindowManager;
 import com.terveyssovellus.softa.MainActivity;
 import com.terveyssovellus.softa.R;
 
+
+
 public class SplashActivity extends Activity {
-    /* timer (in millisecond, 1000 = 1s)
-     This makes delay when you open the app at first to show the splashscreen long enough. */
+
+
     private static int SPLASH_TIME_OUT = 2000;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
