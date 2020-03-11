@@ -14,6 +14,9 @@ import com.terveyssovellus.softa.MainActivity;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.plan.Plan;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProfileCreationForm extends AppCompatActivity {
     private EditText   nameView, ageView;
     private RadioGroup positionView;
@@ -53,7 +56,8 @@ public class ProfileCreationForm extends AppCompatActivity {
         hideKeyboard();
         if(noInputErrors(caller)){
             Profile profile = Profile.getInstance();
-            profile.setProfile(name,age,position,true,"fi",new Plan(),"");
+            List<Mood> emptyMoodList = new ArrayList<>();
+            profile.setProfile(name,age,position,true,"fi",new Plan(),"",emptyMoodList);
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             finish();
@@ -90,7 +94,8 @@ public class ProfileCreationForm extends AppCompatActivity {
     }
 
     public void skip(View caller){
-        Profile.getInstance().setProfile("",0,-1,true,"fi",new Plan(),"");
+        List<Mood> emptyMoodList = new ArrayList<>();
+        Profile.getInstance().setProfile("",0,-1,true,"fi",new Plan(),"",emptyMoodList);
         finish();
     }
 }

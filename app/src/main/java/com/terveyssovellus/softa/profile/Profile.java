@@ -1,6 +1,7 @@
 package com.terveyssovellus.softa.profile;
 
 import com.terveyssovellus.softa.plan.Plan;
+import java.util.List;
 
 /**
  *
@@ -12,6 +13,7 @@ public class Profile {
     private Boolean hasBeenCreated,planSelected;
     private Plan plan;
     private static Profile information;
+    private List<Mood> moodList;
 
     public static Profile getInstance(){
         if(information == null) {
@@ -29,7 +31,8 @@ public class Profile {
             Boolean hasBeenCreated,
             String lang,
             Plan plan,
-            String planString
+            String planString,
+            List<Mood> moodList
                           ){
         this.name = name;
         this.age = age;
@@ -39,10 +42,19 @@ public class Profile {
         this.language = lang;
         this.plan = plan;
         this.planString = planString;
+        this.moodList = moodList;
     }
 
     public void setProfile(Profile profile){
-        setProfile(profile.name,profile.age,profile.position,true,profile.language,profile.plan,profile.planString);
+        setProfile(profile.name,
+                   profile.age,
+                   profile.position,
+                   true, // <--------------- hasBeenCreated will always be true when setting profile
+                   profile.language,
+                   profile.plan,
+                   profile.planString,
+                   profile.moodList
+                  );
     }
 
     public void resetProfile(){
@@ -51,6 +63,10 @@ public class Profile {
         this.position = -1;
         this.hasBeenCreated = false;
         this.planSelected = false;
+    }
+
+    public void addMood(Mood mood){
+        this.moodList.add(mood);
     }
 
     public Boolean hasBeenCreated(){return this.hasBeenCreated;}
