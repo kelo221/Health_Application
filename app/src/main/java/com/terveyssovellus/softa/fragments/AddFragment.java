@@ -1,12 +1,14 @@
 package com.terveyssovellus.softa.fragments;
 
 import android.content.Intent;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
@@ -17,6 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.gson.Gson;
 import com.terveyssovellus.softa.CurrentProgram;
+import com.terveyssovellus.softa.QrReader;
 import com.terveyssovellus.softa.R;
 import com.terveyssovellus.softa.plan.Plan;
 import com.terveyssovellus.softa.plan.PlanArchive;
@@ -24,6 +27,8 @@ import com.terveyssovellus.softa.profile.Profile;
 
 import java.util.Arrays;
 import java.util.List;
+
+import static android.content.Context.INPUT_METHOD_SERVICE;
 
 public class AddFragment extends Fragment implements View.OnClickListener {
 
@@ -94,8 +99,17 @@ public class AddFragment extends Fragment implements View.OnClickListener {
     }
 
     private void selectPlanQR(){
-        //Intent intent = new Intent(getContext(), PlanSelectQR.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getContext(), QrReader.class);
+        startActivity(intent);
+    }
+
+    private void hideKeyboard(){
+        try {
+            InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(getView().getWindowToken(), 0);
+        } catch (Exception e) {
+            // keyboard was already hidden
+        }
     }
 
     private void selectPlanCode(){
@@ -105,6 +119,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         } else if(input.equals("222")||input.equals("444")){
             Profile.getInstance().setPlanString(input);
             setVisibility();
+            hideKeyboard();
         } else {
             Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING
             /*

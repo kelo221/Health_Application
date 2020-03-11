@@ -2,6 +2,10 @@ package com.terveyssovellus.softa.profile;
 
 import com.terveyssovellus.softa.plan.Plan;
 
+/**
+ *
+ * javadoc
+ */
 public class Profile {
     private String name,language,planString;
     private int age, position;
