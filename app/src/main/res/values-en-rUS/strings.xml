@@ -55,9 +55,6 @@
     <string name="plan_select_qr_button">Select with a QR-code</string>
     <string name="plan_select_code_button">Select with code</string>
     <string name="plan_select_code_hint">Input code</string>
-    <string name="plan_select_qr_button">Select with QR</string>
-    <string name="plan_select_code_button">Select with code</string>
-    <string name="plan_select_code_hint">Input code</string>
     <string name="forbidden_driving">Driving</string>
     <string name="forbidden_sauna">Going to Sauna</string>
     <string name="treatment_nasal_jug">Using nasal jug</string>

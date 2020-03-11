@@ -66,7 +66,6 @@
     <string name="listView_notification">Ei hoito-ohjetta valittuna, jos kamera ei toimi lisää koodi manuaalisesti alhaalla olevaan kenttään ja paina nappia.</string>
     <string name="ICE">Soita hätänumeroon</string>
     <string name="ICE_INFO">Hätätilanteessa soita tähän numeroon.</string>
-    <string name="symptom_heavy_bleeding">Voimakas verenvuoto</string>
     <string name="help_home">Paina hymiöitä oman vointisi mukaan.</string>
     <string name="help_qr">Valitse suunnitelma joko syöttämällä koodi tai käyttämällä kameraa qr-koodin syöttämiseen.</string>
     <string name="greetings">Kuinka voit tänään?</string>
@@ -76,9 +75,6 @@
     <string name="feeling_neut">Toivottavasti olosi kohenee pian!</string>
     <string name="feeling_good">Mukava kuulla! Jatka paranemista.</string>
     <string name="plan_select_qr_button">Valitse QR koodilla</string>
-    <string name="plan_select_code_button">Valitse koodilla</string>
-    <string name="plan_select_code_hint">Lisää koodi</string>
-    <string name="plan_select_qr_button">Valitse QR-koodilla</string>
     <string name="plan_select_code_button">Valites koodilla</string>
     <string name="plan_select_code_hint">Kirjoita koodi</string>
     <string name="forbidden_driving">Autolla ajo</string>
