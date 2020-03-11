@@ -70,7 +70,9 @@
     <string name="feeling_good">Skönt att höra</string>
     <string name="feeling_neut">Jag hoppas du blir bättre snart.</string>
     <string name="feeling_bad">Bli bättre snart! Se till att dina symtoner är normala.</string>
-    <string name="plan_select_qr_button">Välj med en QR-kod</string>
+    <string name="plan_select_qr_button">Välja med QR-kod</string>
     <string name="plan_select_code_button">Välj med en kod</string>
     <string name="plan_select_code_hint">Inmatningskod</string>
+    <string name="plan_select_qr_button">Välj med QR-kod</string>
+    <string name="plan_select_code_button">Välja med kod</string>
 </resources>
