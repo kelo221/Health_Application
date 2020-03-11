@@ -12,6 +12,7 @@ import android.widget.RadioGroup;
 import com.google.android.material.snackbar.Snackbar;
 import com.terveyssovellus.softa.MainActivity;
 import com.terveyssovellus.softa.R;
+import com.terveyssovellus.softa.plan.Plan;
 
 public class ProfileCreationForm extends AppCompatActivity {
     private EditText   nameView, ageView;
@@ -52,7 +53,7 @@ public class ProfileCreationForm extends AppCompatActivity {
         hideKeyboard();
         if(noInputErrors(caller)){
             Profile profile = Profile.getInstance();
-            profile.setProfile(name,age,position,true,"fi");
+            profile.setProfile(name,age,position,true,"fi",new Plan(),"");
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             finish();
@@ -89,7 +90,7 @@ public class ProfileCreationForm extends AppCompatActivity {
     }
 
     public void skip(View caller){
-        Profile.getInstance().setProfile("",0,-1,true,"fi");
+        Profile.getInstance().setProfile("",0,-1,true,"fi",new Plan(),"");
         finish();
     }
 }

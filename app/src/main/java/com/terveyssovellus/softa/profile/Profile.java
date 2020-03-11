@@ -3,14 +3,14 @@ package com.terveyssovellus.softa.profile;
 import com.terveyssovellus.softa.plan.Plan;
 
 public class Profile {
-    private String name,language;
+    private String name,language,planString;
     private int age, position;
-    private Boolean hasBeenCreated;
+    private Boolean hasBeenCreated,planSelected;
     private Plan plan;
     private static Profile information;
 
     public static Profile getInstance(){
-        if (information == null) {
+        if(information == null) {
             information = new Profile();
         }
         return information;
@@ -18,16 +18,27 @@ public class Profile {
 
     private Profile(){}
 
-    public void setProfile(String name, int age, int position, Boolean hasBeenCreated, String lang){
+    public void setProfile(
+            String name,
+            int age,
+            int position,
+            Boolean hasBeenCreated,
+            String lang,
+            Plan plan,
+            String planString
+                          ){
         this.name = name;
         this.age = age;
         this.position = position;
         this.hasBeenCreated = true;
+        this.planSelected = true;
         this.language = lang;
+        this.plan = plan;
+        this.planString = planString;
     }
 
     public void setProfile(Profile profile){
-        setProfile(profile.name,profile.age,profile.position,true,profile.language);
+        setProfile(profile.name,profile.age,profile.position,true,profile.language,profile.plan,profile.planString);
     }
 
     public void resetProfile(){
@@ -35,20 +46,31 @@ public class Profile {
         this.age = 0;
         this.position = -1;
         this.hasBeenCreated = false;
+        this.planSelected = false;
     }
 
     public Boolean hasBeenCreated(){return this.hasBeenCreated;}
     public void setHasBeenCreated(){this.hasBeenCreated = true;}
 
-    public String getName()    {return this.name;}
-    public int getAge()        {return this.age;}
-    public int getPosition()   {return this.position;}
-    public Plan getPlan()      {return this.plan;}
-    public String getLanguage(){return this.language;}
+    public Boolean planSelected(){return this.planSelected;}
+    public void setPlanSelectedFalse(){this.planSelected = false;}
+
+    public String getName()     {return this.name;}
+    public int getAge()         {return this.age;}
+    public int getPosition()    {return this.position;}
+    public Plan getPlan()       {return this.plan;}
+    public String getLanguage() {return this.language;}
+    public String getPlanString(){return this.planString;}
 
     public void setName(String name)     {this.name = name;}
     public void setAge(int age)          {this.age = age;}
     public void setPosition(int position){this.position = position;}
-    public void setPlan(Plan plan)       {this.plan = plan;}
+    public void setPlan(Plan plan)       {this.plan = plan; this.planSelected = true;}
     public void setLanguage(String lang) {this.language = lang;}
+
+    public void setPlanString(String planString){
+        this.planString = planString;
+        this.planSelected = true;
+    }
+
 }

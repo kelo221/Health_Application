@@ -6,12 +6,8 @@ public class Symptom {
     private int level; // 0: normal, 1: alarming
     private String treatment;
 
-    public Symptom(String name, String description, int level, String treatment){
+    public Symptom(String name, int level){
         this.name = name;
-        this.description = description;
         this.level = level;
-        this.treatment = treatment;
     }
-
-
 }

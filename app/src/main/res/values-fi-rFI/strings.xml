@@ -25,7 +25,8 @@
         - Supistavia nenätippoja tai - suihkeita voi käyttää muutamana yönä tukkoisuutta helpottamaan. Jatkuva käyttö on kiellettyä, jottei tulisi lääkenuhaa.\n
         - useita kertoja vuorokaudessa- 1-2 viikkoa\n
     </string>
-        <string name="app_name">Haoma</string>
+
+    <string name="app_name">Haoma</string>
     <string name="profile_create_button">Aloita</string>
     <string name="name_error">Nimeä ei voi jättää tyhjäksi</string>
     <string name="age_error">Tarkista ikä</string>

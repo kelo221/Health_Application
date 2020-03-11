@@ -64,4 +64,16 @@
 
     <!-- Language of Fragments -->
 
+    <!-- Plan selection stuff -->
+    <string name="plan_select_qr_button">Select with QR</string>
+    <string name="plan_select_code_button">Select with code</string>
+    <string name="plan_select_code_hint">Input code</string>
+
+    <string name="forbidden_driving">Autolla ajo</string>
+    <string name="forbidden_sauna">Saunassa käynti</string>
+    <string name="treatment_nasal_jug">Nenäkannun käyttö</string>
+    <string name="symptom_heavy_bleeding">Voimakas verenvuoto</string>
+    <string name="symptom_clogged_nasal_passages">Tukkoiset nenäkanavat</string>
+    <string name="plan_nasal_polyop_removal">Nenäpolyyppien poisto</string>
+
 </resources>
