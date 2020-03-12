@@ -1,6 +1,5 @@
 package com.terveyssovellus.softa.profile;
 
-import com.terveyssovellus.softa.plan.Plan;
 import java.util.List;
 
 /**

@@ -25,7 +25,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".profile.ProfileCreationForm" />
-        <activity android:name=".CurrentProgram" />
         <activity android:name=".MainActivity" />
     </application>
 
