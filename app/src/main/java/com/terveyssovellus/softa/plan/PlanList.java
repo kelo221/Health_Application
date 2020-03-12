@@ -30,6 +30,7 @@ public class PlanList {
 
         plans.add(new SimplePlan("Nasal", "222", R.string.plan_content_nasal, R.drawable.nenakannu, R.drawable.nasal));
         plans.add(new SimplePlan("Septoplasty","444",R.string.plan_content_septoplasty,R.drawable.nenakannu,R.drawable.secto));
+        plans.add(new SimplePlan("Polvileikkaus","666",R.string.plan_content_knee,R.drawable.jumppaohje,R.drawable.knee));
     }
 
     /**
