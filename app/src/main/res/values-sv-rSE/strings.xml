@@ -39,6 +39,8 @@
     <string name="plan_select_code_hint">Inmatningskod</string>
     <string name="plan_select_qr_button">Välj med QR-kod</string>
     <string name="plan_select_code_button">Välj med kod</string>
+    <string name="plan_select_input_invalid">Invalid id</string>
+    <string name="plan_select_input_empty">Input något!</string>
 
     <!-- =========== HELP FRAGMENT =========== -->
     <string name="ICE">Ring nödnumret</string>
@@ -59,6 +61,4 @@
         <item>Information</item>
         <item>Licens</item>
     </string-array>
-    <string name="plan_select_input_invalid">Invalid id</string>
-    <string name="plan_select_input_empty">Input något!</string>
 </resources>
