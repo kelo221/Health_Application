@@ -8,13 +8,7 @@
     <string name="plan_content_septoplasty" tools:ignore="TypographyDashes">Forbidden\n– Operating a vehicle: 24h\n– Touching the nasal canal(!)\n\nAvoid:\n–Flying: 1–2 weeks\n–Physical activity: 1 week\n–Going to sauna: 1 week\n-Blowing nose with extreme force: 1 week \n\nSymptoms:\nNormal :\n Stuffed nasal canals ( use nasal spray or other liquids) \n\n-Alarming symptoms\n-Strong bleeding\n-Fever over 38°C\n-Strong pain\n- Secretion of foul smelling mucus\n- Visible swelling of the nose :\n->   -> IMMEDIATELY contact the treating medical personnel!\n\nTreatment\n- Regular anti-inflammatory painkillers\n- Nasal drops or sprays can be used during the first nights but nor regularly\n- Use of nasal jug, multiple times a day: 1-2 weeks</string>
 
     <string name="plan_name_knee">Knee operation</string>
-    <string name="plan_content_knee">Knee operation \n Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
-        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
-        Symptoms\n  Normaal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
-        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
-        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
-         Treatment- Next day from the operation rest\n
-        - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
+    <string name="plan_content_knee">Forbidden\n- Driving: 24h  \n- Sauna   \n\nAvoid:\n- Flying : 1-2 weeks\n- Exercise : 1 weeks \n- Active moving : 1 weeks \n- Sauna : 1 week\n\nSymptoms\n  Normaal :\n- aching (treatment: venyttely verenkierron aktivoimiseksi)\n- Swelling around the wound\n\nCritical symptoms \n- Strong bleeding * \n- Extreme pain *  \n- Troubles while moving the limb  *   \n- Strong bleeding, bad smell *\n- Visibly colourful area * * \n-> -> CONTACT for the treating unit !  \n\nTreatment\n- Next day from the operation rest\n- Gym + exercise according the instructions (picture) should be started and increased weekly</string>
 
     <!-- =========== PROFILE CREATION FORM =========== -->
     <string name="profile_create_button">Start</string>
