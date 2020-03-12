@@ -13,6 +13,7 @@ import com.terveyssovellus.softa.MainActivity;
 import com.terveyssovellus.softa.R;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * This is the context class for profile creation form. Profile creation form is shown to the user
@@ -67,7 +68,8 @@ public class ProfileCreationForm extends AppCompatActivity {
         if(noInputErrors(caller)){
             Profile profile = Profile.getInstance();
             List<Mood> emptyMoodList = new ArrayList<>();
-            profile.setProfile(name,age,position,"fi","",emptyMoodList); // default, empty profile
+            String lang = Locale.getDefault().getLanguage();
+            profile.setProfile(name,age,position,lang,"",emptyMoodList); // default, empty profile
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // clear other activities
             finish();
