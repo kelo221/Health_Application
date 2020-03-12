@@ -21,7 +21,7 @@ import com.terveyssovellus.softa.R;
  * @author Johanna Väisälä
  */
 public class HelpFragment extends Fragment implements View.OnClickListener {
-    final String alarmNumber = "tel:00030";
+    final String alarmNumber = "tel:0400982662";
 
     /**
      * Mandatory constructor for the fragment
