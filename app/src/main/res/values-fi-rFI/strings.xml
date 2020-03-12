@@ -60,4 +60,6 @@
         <item>Lisätiedot</item>
         <item>Lisenssi</item>
     </string-array>
+    <string name="plan_select_input_empty">Syötä jotain!</string>
+    <string name="plan_select_input_invalid">Virheellinen id</string>
 </resources>

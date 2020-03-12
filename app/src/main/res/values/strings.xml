@@ -58,6 +58,8 @@
     <string name="plan_select_qr_button">Valitse QR koodilla</string>
     <string name="plan_select_code_button">Vatitse koodilla</string>
     <string name="plan_select_code_hint">Kirjoita koodi</string>
+    <string name="plan_select_input_empty">Syötä jotain!</string>
+    <string name="plan_select_input_invalid">Virheellinen id</string>
 
     <!-- =========== HELP FRAGMENT =========== -->
     <string name="ICE">Soita hätänumeroon</string>

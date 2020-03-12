@@ -66,4 +66,6 @@
         <item>About</item>
         <item>Licence</item>
     </string-array>
+    <string name="plan_select_input_empty">Input something!</string>
+    <string name="plan_select_input_invalid">No such plan id!</string>
 </resources>

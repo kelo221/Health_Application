@@ -133,13 +133,13 @@ public class AddFragment extends Fragment implements View.OnClickListener {
     private void selectPlanCode(){
         String input = codeInput.getText().toString();
         if(TextUtils.isEmpty(input)){
-            Toast.makeText(getContext(),"Input something!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING TODO
+            Toast.makeText(getContext(),R.string.plan_select_input_empty,Toast.LENGTH_SHORT).show();
         } else if(PlanList.getInstance().planExists(input)){
             Profile.getInstance().setPlanString(input);
             setVisibility();
             hideKeyboard();
         } else {
-            Toast.makeText(getContext(),"No such plan!",Toast.LENGTH_SHORT).show(); // CHANGE TO STRING TODO
+            Toast.makeText(getContext(),R.string.plan_select_input_invalid,Toast.LENGTH_SHORT).show();
         }
     }
 

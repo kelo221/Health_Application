@@ -59,4 +59,6 @@
         <item>Information</item>
         <item>Licens</item>
     </string-array>
+    <string name="plan_select_input_invalid">Invalid id</string>
+    <string name="plan_select_input_empty">Input något!</string>
 </resources>
