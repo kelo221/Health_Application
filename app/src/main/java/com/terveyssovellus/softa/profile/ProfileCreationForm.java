@@ -69,7 +69,7 @@ public class ProfileCreationForm extends AppCompatActivity {
             Profile profile = Profile.getInstance();
             List<Mood> emptyMoodList = new ArrayList<>();
             String lang = Locale.getDefault().getLanguage();
-            profile.setProfile(name,age,position,lang,"",emptyMoodList); // default, empty profile
+            profile.setProfile(name,age,position,false,lang,"",emptyMoodList); // default, empty profile
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // clear other activities
             finish();

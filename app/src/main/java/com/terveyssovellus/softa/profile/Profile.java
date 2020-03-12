@@ -44,6 +44,7 @@ public class Profile {
             String name,
             int age,
             int position,
+            boolean planSelected,
             String lang,
             String planString,
             List<Mood> moodList
@@ -52,7 +53,7 @@ public class Profile {
         this.age = age;
         this.position = position;
         this.hasBeenCreated = true;
-        this.planSelected = true;
+        this.planSelected = planSelected;
         this.language = lang;
         this.planString = planString;
         this.moodList = moodList;
@@ -68,6 +69,7 @@ public class Profile {
         setProfile(profile.name,
                    profile.age,
                    profile.position,
+                   profile.planSelected,
                    profile.language,
                    profile.planString,
                    profile.moodList

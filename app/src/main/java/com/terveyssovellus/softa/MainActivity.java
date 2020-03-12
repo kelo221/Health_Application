@@ -91,11 +91,20 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_add_24);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_help_outline_24);
         tabLayout.getTabAt(3).setIcon(R.drawable.ic_baseline_settings_24);
+
+        if(Profile.getInstance().planSelected()){
+            viewPager.setCurrentItem(1);
+        }
     }
 
     protected void onStart(){
         writePrefs();
         super.onStart();
+    }
+
+    protected void onRestart(){
+        viewPager.setCurrentItem(getIntent().getIntExtra(MainActivity.TARGET_FRAGMENT,0));
+        super.onRestart();
     }
 
     protected void onPause(){
@@ -149,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             profileCreationForm();
         }
-        //appHasStarted = true;
         Profile profile = Profile.getInstance();
         setLanguage(profile.getLanguage());
     }

@@ -27,6 +27,12 @@ public class Licences extends AppCompatActivity {
         super.onDestroy();
     }
 
+    /**
+     * This method overrides the method that is called when the user presses "back"-button. We do
+     * this because we want to give intent some extra, so that correct fragment is opened when the
+     * MainActivity starts again.
+     * @return true
+     */
     @Override
     public boolean onSupportNavigateUp(){
         Intent settings = new Intent(this, MainActivity.class);
