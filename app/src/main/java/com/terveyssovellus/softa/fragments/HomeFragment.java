@@ -3,8 +3,6 @@ package com.terveyssovellus.softa.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,15 +14,24 @@ import com.terveyssovellus.softa.profile.Mood;
 import com.terveyssovellus.softa.profile.MoodHistory;
 import com.terveyssovellus.softa.profile.Profile;
 
+/**
+ * This is the context class of home fragment. It also contains functionality for asking the mood of
+ * the user, storing it to the profile and for showing the history log of saved mood-entries.
+ *
+ * @author Ville Kumpulainen
+ * @author Jere Lampola
+ */
 public class HomeFragment extends Fragment implements View.OnClickListener {
     TextView greeting, question;
 
+    /**
+     * Mandatory constructor for the fragment
+     */
     public HomeFragment(){}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -50,9 +57,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onStart(){
-       greeting.setText(getResources().getString(R.string.hei) + " " + Profile.getInstance().getName());
-       question.setText(R.string.greetings);
-       super.onStart();
+        String greetingString = getResources().getString(R.string.home_greeting)
+                                + " " + Profile.getInstance().getName();
+        greeting.setText(greetingString);
+        question.setText(R.string.home_question);
+        super.onStart();
     }
 
     @Override
@@ -76,12 +85,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    private void saveMood(View caller){
+    private void saveMood(View caller){ // add new mood to Profile's List<Mood>
         int moodInt = Integer.parseInt((String)caller.getTag());
         Profile.getInstance().addMood(new Mood(moodInt));
     }
 
-    private void showMoodHistory(){
+    private void showMoodHistory(){ // open list view activity with mood log
         Intent intent = new Intent(getContext(), MoodHistory.class);
         startActivity(intent);
     }

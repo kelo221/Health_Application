@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Haoma</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- =========== PLANS =========== -->
+    <string name="plan_name_nasal">Nasal polyps</string>
+    <string name="plan_content_nasal" tools:ignore="TypographyDashes">Forbidden\n- Operating a vehicle: 24h\n- Touching the nasal canal(!)\n\nAvoid:\n-Flying: 1-2 weeks\n -Physical activity: 1 week\n-Going to sauna: 1 week\n-Blowing nose with extreme force: 1 week \n\nSymptoms:\nNormal :\n- Stuffed nasal canals ( use nasal spray or other liquids)\n\nAlarming symptoms\n-Strong bleeding\n-Fever over 38°C\n-Strong pain\nSecretion of foul smelling mucus\n Visible swelling of the nose :\n->   -> IMMEDIATELY contact the treating medical personnel!\n\nTreatment\n- Regular anti-inflammatory painkillers\n- Nasal drops or sprays can be used during the first nights but nor regularly\n- Use of nasal jug, multiple times a day: 1-2 weeks</string>
+
+    <string name="plan_name_septoplasty">Septoplastia</string>
+    <string name="plan_content_septoplasty" tools:ignore="TypographyDashes">Forbidden\n– Operating a vehicle: 24h\n– Touching the nasal canal(!)\n\nAvoid:\n–Flying: 1–2 weeks\n–Physical activity: 1 week\n–Going to sauna: 1 week\n-Blowing nose with extreme force: 1 week \n\nSymptoms:\nNormal :\n Stuffed nasal canals ( use nasal spray or other liquids) \n\n-Alarming symptoms\n-Strong bleeding\n-Fever over 38°C\n-Strong pain\n- Secretion of foul smelling mucus\n- Visible swelling of the nose :\n->   -> IMMEDIATELY contact the treating medical personnel!\n\nTreatment\n- Regular anti-inflammatory painkillers\n- Nasal drops or sprays can be used during the first nights but nor regularly\n- Use of nasal jug, multiple times a day: 1-2 weeks</string>
+
+    <string name="plan_name_knee">Knee operation</string>
+    <string name="plan_content_knee">Knee operation \n Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
+        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
+        Symptoms\n  Normaal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
+        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
+        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
+         Treatment- Next day from the operation rest\n
+        - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
+
+    <!-- =========== PROFILE CREATION FORM =========== -->
     <string name="profile_create_button">Start</string>
     <string name="name_error">The namefield cannot be empthy</string>
     <string name="age_error">Check age</string>
@@ -10,16 +26,39 @@
     <string name="profile_form_name_default">Enter your name</string>
     <string name="profile_form_age_default">Enter your age</string>
     <string name="profile_form_welcome">Welcome to Haoma</string>
+
+    <!-- =========== FRAGMENT HEADERS =========== -->
     <string name="fragment_name_home">Home</string>
     <string name="fragment_name_add">List</string>
     <string name="fragment_name_help">Help</string>
     <string name="fragment_name_settings">Settings</string>
+
+
+    <!-- =========== HOME FRAGMENT =========== -->
+    <string name="history">Show history</string>
+    <string name="feeling_bad">Get better soon! Make sure your symptoms are normal.</string>
+    <string name="feeling_neut">I hope you get better soon.</string>
+    <string name="feeling_good">Good to hear!</string>
+    <string name="home_greeting">Hello</string>
+    <string name="home_question">How are you feeling today?</string>
+
+    <!-- =========== PLAN FRAGMENT =========== -->
+    <string name="plan_select_qr_button">Select with a QR-code</string>
+    <string name="plan_select_code_button">Select with code</string>
+    <string name="plan_select_code_hint">Input code</string>
+
+    <!-- =========== HELP FRAGMENT =========== -->
+    <string name="ICE">Dial the emergency number</string>
+    <string name="ICE_INFO">In case of emergency dial this number.</string>
+    <string name="help_home">Use the smiley buttons to input how well you are feeling. See your own history by pressing the show history button.</string>
+    <string name="help_qr">" Select the plan by either inputting code or using the camera to scan for a qr-code, and pressing the associated button."</string>
+
+    <!-- =========== SETTINGS FRAGMENT =========== -->
     <string name="fragment_settings_content_reset">Hold down the button to reset the application</string>
     <string name="fragment_settings_content_versio">Version 0.1</string>
     <string name="fragment_settings_language_eng">English</string>
     <string name="fragment_settings_language_fin">Finnish</string>
     <string name="fragment_settings_language_swe">Swedish</string>
-
 
     <string-array name="fragment_settings_content">
         <item>Language</item>
@@ -27,39 +66,4 @@
         <item>About</item>
         <item>Licence</item>
     </string-array>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <string name="plan_content_nasal">Forbidden\n - Operating a vehicle: 24h\n - Touching the nasal canal(!)\n
-        Avoid:\\n -Flying: 1-2 weeks\\n -Physical activity: 1 week\n         -Going to sauna: 1 week\\n -Blowing nose with extreme force: 1 week \\n Symptoms:\\n         Normal :\\\\n Stuffed nasal canals ( use nasal spray or other liquids) \\n         -Alarming symptoms\\n -Strong bleeding\\n -Fever over 38 C °\\n -Strong pain\\n         Secretion of foul smelling mucus\\n Visible swelling of the nose :\\n         ->   -> IMMEDIATELY contact the treating medical personnel!\\n Treatment\\n         - Regular anti-inflammatory painkillers/n - Nasal drops or sprays can be used during the first nights but nor regularly - Use of nasal jug, multiple times a day: 1-2 weeks \\n</string>
-    <string name="plan_content_septoplasty"><![CDATA[Forbidden\n – Operating a vehicle: 24h\n – Touching the nasal canal(!)\n         Avoid:\n –Flying: 1–2 weeks\n –Physical activity: 1 week\n         –Going to sauna: 1 week\n -Blowing nose with extreme force: 1 week \n Symptoms:\n         Normal :\\n Stuffed nasal canals ( use nasal spray or other liquids) \n         -Alarming symptoms\n -Strong bleeding\n -Fever over 38 C °\n -Strong pain\n         Secretion of foul smelling mucus\n Visible swelling of the nose :\n         ->   -> IMMEDIATELY contact the treating medical personnel!\n Treatment\n         - Regular anti-inflammatory painkillers/n - Nasal drops or sprays can be used during the first nights but nor regularly - Use of nasal jug, multiple times a day: 1-2 weeks \n]]></string>
-    <string name="plan_name_nasal">Nasal polyps</string>
-    <string name="listView_button">Scan a QR-Code</string>
-    <string name="listView_notification">No plan selected, if you cannot get the camera working write the numbers in the text box below and press the button.</string>
-    <string name="plan_name_knee">Knee operation</string>
-    <string name="plan_content_knee">Knee operation \n Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
-        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
-        Symptoms\n  Normaal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
-        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
-        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
-         Treatment- Next day from the operation rest\n
-        - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
-    <string name="ICE">Dial the emergency number</string>
-    <string name="ICE_INFO">In case of emergency dial this number.</string>
-    <string name="help_qr">" Select the plan by either inputting code or using the camera to scan for a qr-code, and pressing the associated button."</string>
-    <string name="help_home">Use the smiley buttons to input how well you are feeling. See your own history by pressing the show history button.</string>
-    <string name="greetings">How are you feeling today?</string>
-    <string name="hei">Hi</string>
-    <string name="history">Show history</string>
-    <string name="feeling_bad">Get better soon! Make sure your sympthons are normal.</string>
-    <string name="feeling_neut">I hope you get better soon.</string>
-    <string name="feeling_good">Good to hear!</string>
-    <string name="plan_select_qr_button">Select with a QR-code</string>
-    <string name="plan_select_code_button">Select with code</string>
-    <string name="plan_select_code_hint">Input code</string>
-    <string name="forbidden_driving">Driving</string>
-    <string name="forbidden_sauna">Going to Sauna</string>
-    <string name="treatment_nasal_jug">Using nasal jug</string>
-    <string name="symptom_heavy_bleeding">Heavy bleeding</string>
-    <string name="symptom_clogged_nasal_passages">Clogged nasal passages</string>
-    <string name="plan_nasal_polyop_removal">Nasal polyp removal</string>
-
 </resources>

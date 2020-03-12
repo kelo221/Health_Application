@@ -1,7 +1,6 @@
 package com.terveyssovellus.softa.profile;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +11,16 @@ import android.widget.RadioGroup;
 import com.google.android.material.snackbar.Snackbar;
 import com.terveyssovellus.softa.MainActivity;
 import com.terveyssovellus.softa.R;
-import com.terveyssovellus.softa.plan.Plan;
-
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is the context class for profile creation form. Profile creation form is shown to the user
+ * when there is no profile detected, the profile is flagged as !hasBeenCreated or the app is
+ * reset from the settings. This class contains methods for validating user inputs.
+ *
+ * @author Jere Lampola
+ */
 public class ProfileCreationForm extends AppCompatActivity {
     private EditText   nameView, ageView;
     private RadioGroup positionView;
@@ -32,7 +36,7 @@ public class ProfileCreationForm extends AppCompatActivity {
         ageView = findViewById(R.id.profile_form_age);
         positionView = findViewById(R.id.profile_form_position);
 
-        activityFullScreen();
+        activityFullScreen(); // set activity in full screen (hide top bar)
     }
 
     private void activityFullScreen(){
@@ -52,19 +56,33 @@ public class ProfileCreationForm extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method saves the profile, but only if inputs passes validations, then it'll close the
+     * activity and give intent to MainActivity.
+     *
+     * @param caller View, the button that was pressed, will be passed on
+     */
     public void saveProfile(View caller){
         hideKeyboard();
         if(noInputErrors(caller)){
             Profile profile = Profile.getInstance();
             List<Mood> emptyMoodList = new ArrayList<>();
-            profile.setProfile(name,age,position,true,"fi",new Plan(),"",emptyMoodList);
+            profile.setProfile(name,age,position,"fi","",emptyMoodList); // default, empty profile
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // clear other activities
             finish();
             startActivity(intent);
         }
     }
 
+    /**
+     * This method will check all three inputs the user will give: name, age and position. Name
+     * cannot be empty string, age must be an integer in the range of 1-150 and position must be
+     * selected.
+     *
+     * @param caller View to attach Snackbar to
+     * @return true if all the inputs pass validation
+     */
     private Boolean noInputErrors(View caller){
         name = nameView.getText().toString();
         String ageString = ageView.getText().toString();

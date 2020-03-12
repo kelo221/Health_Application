@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="plan_name_septplasty">Septoplasty</string>
-    <string name="plan_content_septoplasty">Förbjuden \n - Köra bil: 24h\n - Rör ej näsan innifrån (!)\n Undvika:\n - Ansträngning: 1 vecka\n
-        - Påfrestning : 1 vecka \n - Bastu : 1 vecka \n - Stark snytning: 1 vecka \n
-        Symtom:\n
-        Normal :\n - I början slemhinnarna är dästa - Torr blod och sekret på näsans slemhinnarna\n
-        - I början kan komma klar blod mellan sekret, mörkare koagulerad blod kan komma ca en vecka.\n
-        - Det är lättare att andas pä nesan i 1-2 månader. \n
-        Alarn symptom:\n - Kraftig näsblödning över 15 minuter
-        \n - Feber över 38 C° *
-        \n - Kraftig värk *\n- Riklig varig eller dålig slemning * \n
-        - Distinkt näsområdets svällining * *\n -> -> KONTAKT genast hälsovårdcentral ! \n eller utanför abetstid sjukhusets tjänstgörsskift Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner./n  - Näsdroppar eller nässpray kan användas under de första dagarna att lugna respiration.\n</string>
-    <string name="app_name">Haoma</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- =========== PLANS =========== -->
+    <string name="plan_name_nasal">Näspolypernas amortering</string>
+    <string name="plan_content_nasal" tools:ignore="TypographyDashes">Förbjuden \n- Köra bil: 24h\n- Rör ej näsan innifrån (!)\n\nUndvika:\n- Ansträngning: 1 vecka\n- Påfrestning : 1 vecka\\n- Bastu : 1 vecka\n- Stark snytning : 1 vecka\n\nSymtom:\n Normal :\n- I början slemhinnarna är dästa - Torr blod och sekret på näsans slemhinnarna\n- I början kan komma klar blod mellan sekret, mörkare koagulerad blod kan komma ca en vecka.\n- Det är lättare att andas pä nesan i 1-2 månader.\n\nAlarn symptom:\n- Kraftig näsblödning över 15 minuter\n- Feber över 38°C *\n- Kraftig värk *\n- Riklig varig eller dålig slemning *\n- Distinkt näsområdets svällining * *\n-> -> KONTAKT genast hälsovårdcentral !\neller utanför abetstid sjukhusets tjänstgörsskift Vård\n- Att lindra smärta ta vanliga antiinflammatoriska värkmediciner.\n- Näsdroppar eller nässpray kan användas under de första dagarna att lugna respiration.</string>
+
+    <string name="plan_name_septoplasty">Septoplasty</string>
+    <string name="plan_content_septoplasty" tools:ignore="TypographyDashes">Förbjuden \n- Köra bil: 24h\n- Rör ej näsan innifrån (!)\n\nUndvika:\n- Ansträngning: 1 vecka\n- Påfrestning : 1 vecka \n- Bastu : 1 vecka \n- Stark snytning: 1 vecka \n\nSymtom:\nNormal :\n -I början slemhinnarna är dästa - Torr blod och sekret på näsans slemhinnarna\n- I början kan komma klar blod mellan sekret, mörkare koagulerad blod kan komma ca en vecka.\n- Det är lättare att andas pä nesan i 1-2 månader.\n\nAlarn symptom:\n - Kraftig näsblödning över 15 minuter\n- Feber över 38°C *\n- Kraftig värk *\n- Riklig varig eller dålig slemning * \n- Distinkt näsområdets svällining * *\n-> -> KONTAKT genast hälsovårdcentral ! \n eller utanför abetstid sjukhusets tjänstgörsskift Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner.\n- Näsdroppar eller nässpray kan användas under de första dagarna att lugna respiration.</string>
+
+    <string name="plan_name_knee">Knäoperation</string>
+    <string name="plan_content_knee">Knäoperation</string>
+
+    <!-- =========== PROFILE CREATION FORM =========== -->
     <string name="profile_create_button">Börja</string>
     <string name="name_error">Namn är obligatorisk</string>
     <string name="age_error">Kolla åldern</string>
@@ -21,56 +20,43 @@
     <string name="profile_form_name_default">Skriv ditt namn</string>
     <string name="profile_form_age_default">Skriv ditt ålder</string>
     <string name="profile_form_welcome">Vällkommen att använda Haoma</string>
+
+    <!-- =========== FRAGMENT HEADERS =========== -->
     <string name="fragment_name_home">Hem</string>
     <string name="fragment_name_add">Instruktioner</string>
     <string name="fragment_name_help">Hjälp</string>
     <string name="fragment_name_settings">Inställningar</string>
+
+    <!-- =========== HOME FRAGMENT =========== -->
+    <string name="history">Visa historia</string>
+    <string name="feeling_good">Skönt att höra</string>
+    <string name="feeling_neut">Jag hoppas du blir bättre snart.</string>
+    <string name="feeling_bad">Bli bättre snart! Se till att dina symtoner är normala.</string>
+    <string name="home_greeting">Hej</string>
+    <string name="home_question">Hur mår du idag?</string>
+
+    <!-- =========== PLAN FRAGMENT =========== -->
+    <string name="plan_select_code_hint">Inmatningskod</string>
+    <string name="plan_select_qr_button">Välj med QR-kod</string>
+    <string name="plan_select_code_button">Välj med kod</string>
+
+    <!-- =========== HELP FRAGMENT =========== -->
+    <string name="ICE">Ring nödnumret</string>
+    <string name="ICE_INFO">I nödfall ring detta nummer.</string>
+    <string name="help_home">Använd smiley-knapparna för att mata in hur väl du mår. Se din egen historia genom att trycka på knappen Visa historik.</string>
+    <string name="help_qr">Välj planen genom att antingen mata in kod eller använda kameran för att söka efter en qr-kod och trycka på tillhörande knapp.</string>
+
+    <!-- =========== SETTINGS FRAGMENT =========== -->
     <string name="fragment_settings_content_reset">Tryck knappen till botten att återställa</string>
     <string name="fragment_settings_content_versio">Version 0.1</string>
     <string name="fragment_settings_language_eng">Engelska</string>
     <string name="fragment_settings_language_fin">Finska</string>
     <string name="fragment_settings_language_swe">Svenska</string>
-    <string name="plan_content_nasal">
-        Förbjuden \n - Köra bil: 24h\n - Rör ej näsan innifrån (!)\n Undvika:\n
-        - Ansträngning: 1 vecka\n - Påfrestning : 1 vecka\\n - Bastu : 1 vecka\n
-        - Stark snytning : 1 vecka\n Symtom:\n Normal :\n - I början slemhinnarna är dästa - Torr blod och sekret på näsans slemhinnarna\n
-        - I början kan komma klar blod mellan sekret, mörkare koagulerad blod kan komma ca en vecka.
-        \n - Det är lättare att andas pä nesan i 1-2 månader.\n Alarn symptom:\n - Kraftig näsblödning över 15 minuter/n - Feber över 38 C° *\n - Kraftig värk *\n
-          - Riklig varig eller dålig slemning *\n - Distinkt näsområdets svällining * *\n
-        -> -> KONTAKT genast hälsovårdcentral !\n
-        eller utanför abetstid sjukhusets tjänstgörsskift Vård\n - Att lindra smärta ta vanliga antiinflammatoriska värkmediciner.\n
-        - Näsdroppar eller nässpray kan användas under de första dagarna att lugna respiration.\n
-    </string>
-
-
-
-
-    <string name="plan_name_nasal">Näspolypernas amortering</string>
-
-
 
     <string-array name="fragment_settings_content">
         <item>Språk</item>
         <item>Återslälla appen</item>
         <item>Information</item>
         <item>Licens</item>
-
     </string-array>
-    <string name="listView_button">Scan a QR-Code</string>
-    <string name="listView_notification">No plan selected.</string>
-    <string name="plan_name_knee">Knäoperation</string>
-    <string name="plan_content_knee">Knäoperation</string>
-    <string name="ICE">Ring nödnumret</string>
-    <string name="ICE_INFO">I nödfall ring detta nummer.</string>
-    <string name="help_home">Använd smiley-knapparna för att mata in hur väl du mår. Se din egen historia genom att trycka på knappen Visa historik.</string>
-    <string name="help_qr">Välj planen genom att antingen mata in kod eller använda kameran för att söka efter en qr-kod och trycka på tillhörande knapp.</string>
-    <string name="greetings">Hur mår du idag?</string>
-    <string name="hei">Hej</string>
-    <string name="history">Visa historia</string>
-    <string name="feeling_good">Skönt att höra</string>
-    <string name="feeling_neut">Jag hoppas du blir bättre snart.</string>
-    <string name="feeling_bad">Bli bättre snart! Se till att dina symtoner är normala.</string>
-    <string name="plan_select_code_hint">Inmatningskod</string>
-    <string name="plan_select_qr_button">Välj med QR-kod</string>
-    <string name="plan_select_code_button">Välja med kod</string>
 </resources>

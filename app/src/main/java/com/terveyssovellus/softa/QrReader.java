@@ -6,7 +6,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -15,10 +14,17 @@ import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 import com.google.android.gms.vision.CameraSource;
+import com.terveyssovellus.softa.plan.PlanList;
 import com.terveyssovellus.softa.profile.Profile;
-
 import java.io.IOException;
 
+/**
+ * This is the context method for QR reading activity. It contains the functionality for opening
+ * camera and detecting QR codes from it. Activity will finish if a QR code with valid plan id
+ * encoded in it is found.
+ *
+ * @author Jere Lampola
+ */
 public class QrReader extends AppCompatActivity {
     SurfaceView surfaceView;
     CameraSource cameraSource;
@@ -71,13 +77,15 @@ public class QrReader extends AppCompatActivity {
                     codePreview.post(new Runnable(){
                         @Override
                         public void run() {
-                            cameraSource.stop();
-                            Profile.getInstance().setPlanString(qrCodes.valueAt(0).displayValue);
-                            Intent refresh = new Intent(getApplicationContext(), MainActivity.class);
-                            refresh.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            refresh.putExtra(MainActivity.TARGET_FRAGMENT,1);
-                            finish();
-                            startActivity(refresh);
+                            if(PlanList.getInstance().planExists(qrCodes.valueAt(0).displayValue)){
+                                cameraSource.stop(); // stop camera when valid QR code is found
+                                Profile.getInstance().setPlanString(qrCodes.valueAt(0).displayValue);
+                                Intent refresh = new Intent(getApplicationContext(), MainActivity.class);
+                                refresh.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                refresh.putExtra(MainActivity.TARGET_FRAGMENT,1);
+                                finish();
+                                startActivity(refresh);
+                            }
                         }
                     });
                 }

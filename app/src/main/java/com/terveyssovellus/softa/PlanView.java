@@ -1,18 +1,22 @@
 package com.terveyssovellus.softa;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.terveyssovellus.softa.fragments.ListFragment;
-import com.terveyssovellus.softa.plan.Plan;
 import com.terveyssovellus.softa.plan.PlanList;
 import com.terveyssovellus.softa.plan.SimplePlan;
 
+/**
+ * This is the context class for plan viewing layout. A doctor can open this kind of activity and it
+ * will only contain a QR-code for the plan and the numeric code. An user with profile position set
+ * as patient will never get to this activity.
+ *
+ * @author Jere Lampola
+ */
 public class PlanView extends AppCompatActivity {
     private int planIndex;
     private ImageView qrCode;
@@ -44,6 +48,11 @@ public class PlanView extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
+    /**
+     * Overriden method for clicking back-button to give intent an extra.
+     *
+     * @return true
+     */
     @Override
     public boolean onSupportNavigateUp(){
         Intent settings = new Intent(this, MainActivity.class);

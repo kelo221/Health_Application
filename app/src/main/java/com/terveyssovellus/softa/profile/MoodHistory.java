@@ -7,6 +7,13 @@ import android.widget.ListView;
 import com.terveyssovellus.softa.R;
 import java.util.List;
 
+/**
+ * This is the context class for mood history list view. It does nothing but shows the list of
+ * profiles moodList in a list view.
+ *
+ * @author Jere Lampola
+ */
+
 public class MoodHistory extends AppCompatActivity {
     ListView moodList;
     List<Mood> moodHistory;
@@ -24,7 +31,7 @@ public class MoodHistory extends AppCompatActivity {
         super.onStart();
         moodList.setAdapter(new ArrayAdapter<>(
                 this,
-                android.R.layout.simple_list_item_1,
+                android.R.layout.simple_list_item_1, // use simple list item layout
                 moodHistory)
         );
     }

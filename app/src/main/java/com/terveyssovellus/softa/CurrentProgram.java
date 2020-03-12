@@ -1,14 +1,8 @@
 package com.terveyssovellus.softa;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
-
-import com.terveyssovellus.softa.fragments.AddFragment;
-import com.terveyssovellus.softa.fragments.content.LanguageSelection;
-import com.terveyssovellus.softa.fragments.content.Licences;
 
 public class CurrentProgram extends AppCompatActivity {
 
@@ -27,8 +21,6 @@ public class CurrentProgram extends AppCompatActivity {
         Toast.makeText(this,layout, Toast.LENGTH_SHORT).show();
         chooseProgram = Integer.valueOf(layout);
 
-
-
         switch(chooseProgram) {
             case 222:
                 setContentView(R.layout.activity_nasal_polyops);
@@ -40,9 +32,5 @@ public class CurrentProgram extends AppCompatActivity {
                 setContentView(R.layout.activity_nasal_polyops);
                 break;
         }
-
-
-
-
     }
 }

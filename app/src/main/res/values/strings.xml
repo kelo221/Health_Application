@@ -1,22 +1,13 @@
-<resources>
-    <string name="app_name">Haoma</string>
-
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Haoma</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="long_latin" translatable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
         quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
         sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
         quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
-    <string name="plan_name_knee">Knee operation</string>
-    <string name="plan_content_knee">"Forbidden   - Driving: 24h  \n- Sauna   \n       Avoid:
-        \n- Flying : 1-2 weeks\n - Exercise : 1 weeks \n - Active moving : 1 weeks \n - Sauna : 1 week      \n
-        Symptoms\n  Normal :\n  - aching (treatment: venyttely verenkierron aktivoimiseksi)
-        - Swelling around the wound\n  Critical symptoms \n - Strong bleeding * \n - Extreme pain *  \n- Troubles while moving the limb  *   \n
-        - Strong bleeding, bad smell *\n  - Visibly colourful area * * \n         -> -> CONTACT for the treating unit !  \n
-         Treatment- Next day from the operation rest\n  - Gym + exercise according the instructions (picture) should be started and increased weekly  "</string>
-    <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
-    <string name="plan_content_nasal">Nasal</string>
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    </string>
     <string name="licence" translatable="false">
        Copyright 2020 Haoma Company \n \nLicensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -24,46 +15,57 @@
        distributed under the License is distributed on an "AS IS" BASIS,
        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
        See the License for the specific language governing permissions and
-       limitations under the License. </string>
+       limitations under the License.
+    </string>
+    <string name="default_error" translatable="false">Error</string>
+
+    <!-- =========== PLANS =========== -->
+    <string name="plan_name_nasal">Nenäpolyyppien poisto </string>
+    <string name="plan_content_nasal" tools:ignore="TypographyDashes">Kielletty\n- Autolla ajo: 24h\n- Nenän sisään koskeminen\n\nVältettävä:\n- Lentäminen : 1-2 viikkoa\n- Ponnistelu : 1 viikko\n- Rasitus : 1 viikkoa\n- Saunominen : 1 viikko\n- Voimallinen niistäminen : 1 viikko\n\nOireet\nNormaalit :\n- Tukkoisuus (hoito: supistavat nenätipat)\n- Eritteiden kuivuminen nenään (hoito: huuhtelu kostuttaminen)\nHälyttävät oireet :\n- Voimakas verenvuoto *\n- Kuume yli 38°C *\n- Voimakas kipu *\n- Runsas märkäinen tai pahanhajuinen limaneritys *\n- Ulospäin näkyvä nenän alueen turvotus * *\n->   -> YHTEYS hoitaneeseen yksikköön !\n\nHoito\n- Kannuhoito (seuraavana päivänä operaatiosta)\n- useita kertoja vuorokaudessa- 1-2 viikkoa</string>
+
+    <string name="plan_name_septoplasty">Septoplastia</string>
+    <string name="plan_content_septoplasty" tools:ignore="TypographyDashes">Kielletty\n- Autolla ajo: 24h\n- Nenän sisään koskeminen (!)\n Vältettävä:\n- Ponnistelu : 1 viikko\n- Rasitus : 1 viikkoa\n- Saunominen : 1 viikko\n- Voimallinen niistäminen : 1 viikko\n\nOireet:\nNormaalit :\n- Alussa limakalvot ovat turvoksissa\n- Nenän limakalvolle kertyy kuivunutta eritettä ja verta\n  (hoito: huuhtelu kostuttaminen)\n- Alussa voi tulla kirkasta verta voi tulla eritteen seassa, tummempaa hyytynyttä verta voi tulla viikon ajan.\n- Tukkoisuus helpottaa vähitellen 1-2 kk kuluessa.\n\nHälyttävät oireet:\n- Voimakas verenvuoto yli 15 min, joka ei asetu nenää puristamalla\n- Kuume yli 38°C *\n- Voimakas kipu *\n- Runsas märkäinen tai pahanhajuinen limaneritys *\n- Ulospäin näkyvä nenän alueen turvotus * *\n->   -> YHTEYS hoitaneeseen yksikköön !\n tai virka-ajan ulkopuolella Korva-, nenä- ja kurkkutautien klinkikan päivystyspoliklinikkaan\n\nHoito\n - Kivun hoitoon tavallisia tulehduskipulääkkeitä\n- Supistavia nenätippoja tai - suihkeita voi käyttää muutamana yönä tukkoisuutta helpottamaan. Jatkuva käyttö on kiellettyä, jottei tulisi lääkenuhaa.\n- useita kertoja vuorokaudessa- 1-2 viikkoa</string>
+
+    <string name="plan_name_knee">Polvioperaatio</string>
+    <string name="plan_content_knee" tools:ignore="TypographyDashes">Kielletty   - Autolla ajo: 24h  - Saunominen          Vältettävä:  - Lentäminen : 1-2 viikkoa  - Ponnistelu : 1 viikko  - Rasitus : 1 viikkoa  - Saunominen : 1 viikko           Oireet          Normaalit :  - jomotus (hoito: venyttely verenkierron aktivoimiseksi)          - Turvotusta operaatioalueen ympäristössä          Hälyttävät oireet  - Voimakas verenvuoto *  - Voimakas särky *  - Ongelmat liikuttaessa raajaa *          - Runsas märkäinen tai pahanhajuinen limaneritys *  - Ulospäin näkyvä nenän alueen sinisyys * *          -> -> YHTEYS hoitaneeseen yksikköön !  Hoito    -  Seuraavana päivänä operaatiosta lepoa          - Voimisteluohjeiden (kuva) aloittaminen ja lisäys viikottain</string>
+
+    <!-- =========== PROFILE CREATION FORM =========== -->
     <string name="profile_create_button">Aloita</string>
     <string name="name_error">Nimeä ei voi jättää tyhjäksi</string>
     <string name="age_error">Tarkista ikä</string>
     <string name="position_error">Valitse oletko potilas vai lääkäri</string>
-    <string name="default_error" translatable="false">Error</string>
     <string name="position_patient">Potilas</string>
     <string name="position_doctor">Lääkäri</string>
     <string name="profile_form_name_default">Syötä nimesi</string>
     <string name="profile_form_age_default">Syötä ikäsi</string>
     <string name="profile_form_welcome">Tervetuloa käyttämään Haomaa!</string>
-    <string name="profile_form_skip" translatable="false">Nasal</string>
 
-
-
-    <string name="ICE">ICE</string>
-    <string name="ICE_INFO">ICE-INFO"</string>
-
-    <string name="help_qr"> Select the plan by either inputting code or using the camera to scan for
-a qr-code, and pressing the associated button.</string>
-
-    <string name="help_home">help_home</string>
-
-
-    <string name="listView_button">Scan a QR-Code</string>
-    <string name="listView_notification">No plan selected, if you cannot get the camera working write the numbers in the text box below and press the button.</string>
-
-
-    <!-- Language of Fragments -->
+    <!-- =========== FRAGMENT HEADERS =========== -->
     <string name="fragment_name_home">Koti</string>
     <string name="fragment_name_add">Ohjeet</string>
     <string name="fragment_name_help">Apu</string>
     <string name="fragment_name_settings">Asetukset</string>
 
-    <string name="greetings">NOTWORKING</string>
+    <!-- =========== HOME FRAGMENT =========== -->
+    <string name="home_greeting">Hei</string>
+    <string name="home_question">Kuinka voit tänään?</string>
+    <string name="history">Näytä historia</string>
+    <string name="feeling_good">Mukava kuulla! Jatka paranemista.</string>
+    <string name="feeling_neut">Toivottavasti olosi kohenee pian!</string>
+    <string name="feeling_bad">Harmillista, tarkastathan hoito-ohjeesta ovatko oireesi normaaleja</string>
 
-    <string name="hei">NOTWORKING2</string>
-    <string name="history">history</string>
+    <!-- =========== PLAN FRAGMENT =========== -->
+    <string name="plan_select_qr_button">Valitse QR koodilla</string>
+    <string name="plan_select_code_button">Vatitse koodilla</string>
+    <string name="plan_select_code_hint">Kirjoita koodi</string>
 
+    <!-- =========== HELP FRAGMENT =========== -->
+    <string name="ICE">Soita hätänumeroon</string>
+    <string name="ICE_INFO">Hätätilanteessa soita tähän numeroon.</string>
+    <string name="help_home">Paina hymiöitä oman vointisi mukaan.</string>
+    <string name="help_qr">Valitse suunnitelma joko syöttämällä koodi tai käyttämällä kameraa qr-koodin syöttämiseen.</string>
 
+    <!-- =========== SETTINGS FRAGMENT =========== -->
     <string name="fragment_settings_content_reset">Paina nappi pohjaan nollataksesi sovelluksen</string>
     <string name="fragment_settings_content_versio">Versio 0.1</string>
 
@@ -71,29 +73,10 @@ a qr-code, and pressing the associated button.</string>
     <string name="fragment_settings_language_fin">Suomi</string>
     <string name="fragment_settings_language_swe">Ruotsi</string>
 
-    <string name="feeling_good">feeling_good</string>
-    <string name="feeling_neut">feeling_neut</string>
-    <string name="feeling_bad">feeling_bad</string>
-
-
     <string-array name="fragment_settings_content">
         <item>Kieli</item>
         <item>Nollaa sovellus</item>
         <item>Lisätiedot</item>
         <item>Lisenssi</item>
-
     </string-array>
-    <string name="plan_content_septoplasty">Septoplasty</string>
-    <string name="plan_name_septplasty">Septoplastia</string>
-    <!-- Language of Fragments -->
-    <!-- Plan selection stuff -->
-    <string name="plan_select_qr_button">Select with QR</string>
-    <string name="plan_select_code_button">Select with code</string>
-    <string name="plan_select_code_hint">Input code</string>
-    <string name="forbidden_driving">Autolla ajo</string>
-    <string name="forbidden_sauna">Saunassa käynti</string>
-    <string name="treatment_nasal_jug">Nenäkannun käyttö</string>
-    <string name="symptom_heavy_bleeding">Voimakas verenvuoto</string>
-    <string name="symptom_clogged_nasal_passages">Tukkoiset nenäkanavat</string>
-    <string name="plan_nasal_polyop_removal">Nenäpolyyppien poisto</string>
 </resources>

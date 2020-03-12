@@ -19,7 +19,7 @@ public class PlanArchive {
 
     private PlanArchive(){
         plans = new ArrayList<>();
-
+/*
         List<Treatment> nasalPolypTreatment = new ArrayList<>();
         nasalPolypTreatment.add(new Treatment(Resources.getSystem().getString(R.string.treatment_nasal_jug),0,48, Arrays.asList(8,10,12,14,16,18,20)));
         nasalPolypTreatment.add(new Treatment(Resources.getSystem().getString(R.string.treatment_nasal_jug),48,168, Arrays.asList(8,12,16,20)));
@@ -31,6 +31,8 @@ public class PlanArchive {
         nasalPolypSymptoms.add(new Symptom(Resources.getSystem().getString(R.string.symptom_heavy_bleeding),1));
 
         plans.add(new Plan(222,Resources.getSystem().getString(R.string.plan_nasal_polyop_removal),nasalPolypTreatment,nasalPolypForbidden,nasalPolypSymptoms));
+
+ */
     }
 
     public List<Plan> getPlans(){
